@@ -24,7 +24,7 @@ export default function Home() {
             <meta name="twitter:image:src" content="https://metabatch.ninjametavelive.com/og.png" />
         </Head>
         <main className={styles.main}>
-            test
+            変更チェック
         </main>
     </>
   )
