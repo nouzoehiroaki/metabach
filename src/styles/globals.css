@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
 }
 body a {
   text-decoration: none;
@@ -8,8 +9,197 @@ body a {
 body ul {
   list-style: none;
 }
+body button {
+  background: none;
+  border: none;
+  display: block;
+  line-height: 0;
+  cursor: pointer;
+}
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  border-bottom: 1px solid #8F98C6;
+  background-color: #EEF2F7;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 0px 20px;
+}
+@media (min-width: 769px) {
+  header .header-container {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 992px) {
+  header .header-container {
+    padding: 0px 90px;
+  }
+}
+header .header-container .logo-area {
+  display: flex;
+}
+header .header-container .menu-box {
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 769px) {
+  header .header-container .menu-box button {
+    display: none;
+  }
+}
+header .header-container .menu-box nav {
+  display: none;
+}
+@media (min-width: 769px) {
+  header .header-container .menu-box nav {
+    display: block;
+  }
+}
+header .header-container .menu-box nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-container .menu-box nav ul.main {
+  width: 424px;
+  height: 18px;
+}
+header .header-container .menu-box nav ul li:first-child {
+  position: relative;
+}
+header .header-container .menu-box nav ul li:first-child::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #303A56;
+  border-right: solid 2px #303A56;
+  position: absolute;
+  right: -20px;
+  transform: rotate(135deg);
+  top: 5px;
+  transition: 0.6s ease;
+}
+header .header-container .menu-box nav ul li:first-child:hover::after {
+  transform: rotate(-45deg);
+  transition: 0.6s ease;
+}
+header .header-container .menu-box nav ul li:first-child:hover .sub {
+  opacity: 1;
+  transition: 0.6s ease;
+  visibility: visible;
+}
+header .header-container .menu-box nav ul li a {
+  color: #303A56;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+header .header-container .menu-box nav ul li a:hover {
+  color: #8F98C6;
+  text-decoration: underline;
+}
+header .header-container .menu-box nav ul li .sub {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  opacity: 0;
+  transition: 1s ease;
+}
+header .header-container .menu-box nav ul li .sub li:first-child::after {
+  content: none;
+}
+header .header-container .menu-box nav ul li .sub li a {
+  color: #303A56;
+  border: 1px solid #DDDDDD;
+  height: 77px;
+  line-height: 77px;
+  margin-bottom: 1px;
+  width: 270px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  display: block;
+}
+header .header-container .menu-box nav ul li .sub li a:hover {
+  color: #8F98C6;
+  text-decoration: underline;
+}
+header .menu-content {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 769px) {
+  header .menu-content {
+    display: none;
+  }
+}
+header .menu-content.enter {
+  opacity: 0;
+}
+header .menu-content.enterActive {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+header .menu-content.exit {
+  opacity: 1;
+}
+header .menu-content.exitActive {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+header .menu-content ul.main {
+  padding-left: 55px;
+  padding-top: 42px;
+}
+header .menu-content ul.main li {
+  margin-bottom: 47px;
+}
+header .menu-content ul.main li a {
+  color: #000;
+}
+header .menu-content li ul.sub li {
+  padding-left: 15px;
+  margin-top: 21px;
+  margin-bottom: 0;
+}
+header .menu-content li ul.sub li:first-child {
+  margin-top: 8px;
+}
+header .menu-content li ul.sub li a {
+  color: #1C73DB;
+}
+header .menu-content li a {
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+header .menu-content .header-sns {
+  background-color: #111940;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+header .menu-content .header-sns .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 258px;
+  margin: auto;
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=globals.css.map */
