@@ -2,9 +2,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Noto Sans JP", sans-serif;
+  background-color: #EEF2F7;
+  -webkit-font-smoothing: antialiased;
 }
 body a {
   text-decoration: none;
+}
+body a.btn01 {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  padding: 15.5px 0;
+  max-width: 320px;
+  margin: auto;
+  border: 2px solid #1C73DB;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  color: #1C73DB;
+  font-weight: bold;
+  position: relative;
+}
+body a.btn01::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  background-image: url(/newWindow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 26px;
+  height: 26px;
 }
 body ul {
   list-style: none;
@@ -16,10 +47,60 @@ body button {
   line-height: 0;
   cursor: pointer;
 }
+body button.newOrder {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
 body img {
   width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+body h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+@media (min-width: 575px) {
+  body h2 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 768px) {
+  body h2 {
+    font-size: 40px;
+  }
+}
+body h2 span.en {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+body h2 span.color {
+  color: #1C73DB;
+}
+body p {
+  text-align: justify;
+}
+body p.base16 {
+  font-size: 16px;
+}
+body p.base16.top {
+  color: #303A56;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+body .container {
+  width: 100%;
+  margin: auto;
+  padding: 0 25px;
+}
+@media (min-width: 1500px) {
+  body .container {
+    max-width: 1320px;
+  }
 }
 
 * {
@@ -31,7 +112,6 @@ body img {
 header {
   height: 100px;
   border-bottom: 1px solid #8F98C6;
-  background-color: #EEF2F7;
 }
 header .header-container {
   display: flex;
@@ -144,7 +224,8 @@ header .menu-content {
   left: 0;
   width: 100%;
   height: calc(100vh - 100px);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
 }
 @media (min-width: 769px) {
   header .menu-content {
