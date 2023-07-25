@@ -16,6 +16,11 @@ body button {
   line-height: 0;
   cursor: pointer;
 }
+body img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
 
 * {
   box-sizing: border-box;
