@@ -12,12 +12,21 @@
         position: fixed;
         top:15px;
         right: 15px;
+        z-index: 2;
         button{
             margin: auto;
         }
-        img{
+        .circle{
             width: 35px;
             height: 35px;
+            border: 1px solid #1C73DB;
+            background-color: #F3F3F3;
+            position: relative;
+            border-radius: 100%;
+            color:#1C73DB;
+            line-height: 30px;
+            font-size: 300%;
+            font-family: serif;
         }
         span{
             color:#1C73DB;
