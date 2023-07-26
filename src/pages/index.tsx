@@ -105,9 +105,6 @@ export default function Home() {
                                 isOpen={isOpen} 
                                 videoId="TmJh99ObzOk" 
                                 onClose={closeVideoModal}
-                                // onClose={() => {
-                                //     closeVideoModal();
-                                // }}
                             />
                             <button className={`videoThum ${isVideoThumHidden ? 'hidden' : ''}`} onClick={openModal}>
                                 <picture>

@@ -14,13 +14,15 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
             <div className={modalstyle.modal}>
                 <div className={modalstyle.btnPosi}>
                     <button onClick={onClose}>
-                        <Image
-                            src="/ModalClose.svg"
-                            alt="ModalClose"
-                            className="close"
-                            width={35}
-                            height={35}
-                        />
+                        <picture>
+                            <source srcSet="/ModalClose.webp" type="image/webp" />
+                                <Image
+                                src="/ModalClose.png"
+                                alt="ModalClose"
+                                width={35}
+                                height={35}
+                            />
+                        </picture>
                     </button>
                     <span>CLOSE</span>
                 </div>

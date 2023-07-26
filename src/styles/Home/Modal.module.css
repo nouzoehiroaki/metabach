@@ -17,6 +17,10 @@
 .modal .btnPosi button {
   margin: auto;
 }
+.modal .btnPosi img {
+  width: 35px;
+  height: 35px;
+}
 .modal .btnPosi span {
   color: #1C73DB;
   font-size: 14px;
