@@ -76,6 +76,17 @@
         }
     }
     .margin01{
-        margin-top: 15px;
+        @media (max-width: 767px) {
+            margin-top: 15px;
+        }
+    }
+    .flex{
+        margin-bottom: 40px;
+        max-width: 739px;
+        margin: 0 auto 40px;
+        @media (min-width: 768px) {
+           display: flex;
+           justify-content: space-between;
+        }
     }
 }

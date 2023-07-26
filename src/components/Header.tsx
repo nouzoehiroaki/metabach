@@ -6,9 +6,11 @@ const Header: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+        document.body.classList.toggle('no-scroll');
     };
     const closeMenu = () => {
         setIsMenuOpen(false);
+        document.body.classList.remove('no-scroll');
     };
     const nodeRef = useRef(null);
     return (

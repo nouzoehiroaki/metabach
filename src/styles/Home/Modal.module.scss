@@ -1,0 +1,66 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    overflow: scroll;
+    padding-bottom: 35px;
+    .btnPosi{
+        position: fixed;
+        top:15px;
+        right: 15px;
+        button{
+            margin: auto;
+        }
+        span{
+            color:#1C73DB;
+            font-size: 14px;
+        }
+    }
+    .topPosi{
+        margin-top: 80px;
+        .head{
+            text-align: center;
+            background-color: #1C73DB;
+            border: 2px solid #9F9F9F;
+            width: 100%;
+            padding: 10px 0;
+            h2{
+                position: relative;
+                display: inline-block;
+                text-align: left;
+                color:#fff;
+                font-size: 16px;
+                font-weight: bold;
+                .spanColor{
+                    color:#FFDC58;
+                }
+                &::after{
+                    content:'';
+                    position: absolute;
+                    bottom: -10px;
+                    right: -65px;
+                    background-image: url(/top/metabatch.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    width: 59px;
+                    height: 59px;
+                    background-size: contain;
+                }
+            }
+        }
+        .p{
+            font-size: 16px;
+            padding: 0 24px;
+            margin:30px 0;
+        }
+        .img{
+            max-width: 316px;
+            margin: auto;
+            display: block;
+        }
+    }
+}

@@ -1,9 +1,35 @@
 import Head from 'next/head'
+import React, { useState, useRef  } from 'react';
 import Image from 'next/image'
 import styles from '@/styles/Home/Home.module.scss'
 import Link from 'next/link';
+import Modal from '@/components/Modal';
+import { CSSTransition } from 'react-transition-group';
+import ModalVideo from 'react-modal-video';
+import 'react-modal-video/scss/modal-video.scss';
 
 export default function Home() {
+    const nodeRef = useRef(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isVideoThumHidden, setIsVideoThumHidden] = useState(false);
+    const toggleMenu = () => {
+        setIsModalOpen(!isModalOpen);
+        setIsVideoThumHidden(!isModalOpen);
+        document.body.classList.toggle('no-scroll');
+    };
+    const closeMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+        setIsModalOpen(false);
+        setIsVideoThumHidden(false);
+        document.body.classList.remove('no-scroll');
+    };
+    const [isOpen, setIsOpen] = useState(false);
+    const openModal = () => {
+        document.cookie = 'myCookie=myValue; SameSite=None; Secure';
+        setIsOpen(true);
+    };
+    const closeVideoModal = () => {
+        setIsOpen(false);
+    };
     return (
         <>
             <Head>
@@ -43,18 +69,58 @@ export default function Home() {
                             と提携し、<br />
                             一緒にメタバース×NFTの未来を切り拓いていきます。
                         </strong>
-                        <Link href="/test" className='btn01'>プレスリリース</Link>
-                        <button className={`${styles.margin01} newOrder`}>
-                            <picture>
-                                <source srcSet="/newOrder.webp" type="image/webp" />
-                                <Image
-                                    src="/newOrder.jpg"
-                                    alt="めたばっちホルダーの皆様へ新体制についてのお知らせ"
-                                    width={640}
-                                    height={140}
-                                />
-                            </picture>
-                        </button>
+                        <div className={styles.flex}>
+                            <Link href="/test" className='btn01'>プレスリリース</Link>
+                            <button className={`${styles.margin01} newOrder`} onClick={toggleMenu}>
+                                <picture>
+                                    <source srcSet="/newOrder.webp" type="image/webp" />
+                                    <Image
+                                        src="/newOrder.png"
+                                        alt="めたばっちホルダーの皆様へ新体制についてのお知らせ"
+                                        width={640}
+                                        height={140}
+                                    />
+                                </picture>
+                            </button>
+                        </div>
+                        <CSSTransition
+                            nodeRef={nodeRef}
+                            in={isModalOpen}
+                            timeout={500}
+                            classNames={{
+                                enter:"enter",
+                                enterActive: "enterActive",
+                                exit: "exit",
+                                exitActive: "exitActive",
+                            }}
+                            unmountOnExit
+                        >
+                        <section ref={nodeRef} className='modalUp'>
+                            <Modal onClose={closeMenu} />
+                        </section>
+                        </CSSTransition>
+                        <React.Fragment>
+                            <ModalVideo 
+                                channel='youtube'  
+                                isOpen={isOpen} 
+                                videoId="TmJh99ObzOk" 
+                                onClose={closeVideoModal}
+                                // onClose={() => {
+                                //     closeVideoModal();
+                                // }}
+                            />
+                            <button className={`videoThum ${isVideoThumHidden ? 'hidden' : ''}`} onClick={openModal}>
+                                <picture>
+                                    <source srcSet="/top/openMovie.webp" type="image/webp" />
+                                    <Image
+                                        src="/top/openMovie.png"
+                                        alt="オープニング動画"
+                                        width={1200}
+                                        height={669}
+                                    />
+                                </picture>
+                            </button>
+                        </React.Fragment>
                     </div>
                 </section>
             </main>
