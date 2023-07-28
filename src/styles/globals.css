@@ -112,6 +112,7 @@ body button.videoThum {
   position: relative;
   transition: 0.4s ease;
   margin: auto;
+  width: 100%;
 }
 body button.videoThum.hidden {
   opacity: 0;
@@ -372,5 +373,33 @@ header .menu-content .header-sns .box {
 .modalUp.exitActive {
   opacity: 0;
   transition: opacity 0.5s ease;
+}
+
+.section-margin {
+  margin-top: 50px;
+}
+
+.site-h3 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-h3 h3 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #1C73DB;
+  width: 110px;
+}
+.site-h3::before {
+  content: "";
+  border-top: 4px dotted #1C73DB;
+  width: 43%;
+}
+.site-h3::after {
+  content: "";
+  border-top: 4px dotted #1C73DB;
+  width: 43%;
 }
 /*# sourceMappingURL=globals.css.map */
