@@ -124,6 +124,151 @@ export default function Home() {
                                     ABOUT
                                 </h3>
                             </div>
+                            <div className='link-flex-box'>
+                                <div className='box'>
+                                    <div className='img'>
+                                        <Link href="/">
+                                            <picture>
+                                                <source media="(max-width: 768px)" srcSet="/top/ninjametavelive-sp.webp" type="image/webp" />
+                                                <source media="(max-width: 768px)" srcSet="/top/ninjametavelive-sp.png" type="image/png" />
+                                                <source srcSet="/top/ninjametavelive.webp" type="image/webp" />
+                                                <Image
+                                                    src="/top/ninjametavelive.png"
+                                                    alt="Ninja MetaveLive"
+                                                    width={840}
+                                                    height={745}
+                                                />
+                                            </picture>
+                                        </Link>
+                                    </div>
+                                    <div className='text'>
+                                        <h4 className='title-style'>
+                                            <Link href="">
+                                                NINJAメタバライブ
+                                            </Link>
+                                        </h4>
+                                        <p>
+                                            2021年12月より40回以上のメタバースライブを主催するライブクリエーター集団です。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className='box'>
+                                    <div className='img'>
+                                        <Link href="/">
+                                            <picture>
+                                                <source media="(max-width: 768px)" srcSet="/top/metabatch-sp.webp" type="image/webp" />
+                                                <source media="(max-width: 768px)" srcSet="/top/metabatch-sp.png" type="image/png" />
+                                                <source srcSet="/top/metabatch.webp" type="image/webp" />
+                                                <Image
+                                                    src="/top/metabatch.png"
+                                                    alt="Ninja MetaveLive"
+                                                    width={840}
+                                                    height={745}
+                                                />
+                                            </picture>
+                                        </Link>
+                                    </div>
+                                    <div className='text'>
+                                        <h4 className='title-style'>
+                                            <Link href="/">
+                                                めたばっち
+                                            </Link>
+                                        </h4>
+                                        <p className={styles.topPLetter}>
+                                            メタバースの妖精。NINJAメタバライブが2022年12月にリリースしたジェネラティブNFTのキャラクターです。
+                                        </p>
+                                        <Link href="/" className='guide-line top'>
+                                            二次創作ガイドラインはこちら
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className='box'>
+                                    <div className='img'>
+                                        <Link href="/">
+                                            <picture>
+                                                <source media="(max-width: 768px)" srcSet="/top/rium-sp.webp" type="image/webp" />
+                                                <source media="(max-width: 768px)" srcSet="/top/rium-sp.png" type="image/png" />
+                                                <source srcSet="/top/rium.webp" type="image/webp" />
+                                                <Image
+                                                    src="/top/rium.png"
+                                                    alt="Ninja MetaveLive"
+                                                    width={840}
+                                                    height={745}
+                                                />
+                                            </picture>
+                                        </Link>
+                                    </div>
+                                    <div className='text'>
+                                        <h4 className='title-style'>
+                                            <Link href="/">
+                                                Rium
+                                            </Link>
+                                        </h4>
+                                        <p className={styles.topPLetter}>
+                                            株式会社トランスリミットが開発する国産メタバースプラットフォーム。「動作の軽さ」と「音質の良さ」が強みです。<br />
+                                            2023年6月よりNINJAメタバライブと提携中。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className='members section-margin'>
+                            <div className='site-h3'>
+                                <h3>
+                                    MEMBERS
+                                </h3>
+                            </div>
+                            <div className={styles.flex02}>
+                                <div className={styles.box}>
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcSet="/top/member-sp.webp" type="image/webp" />
+                                        <source media="(max-width: 768px)" srcSet="/top/member-sp.png" type="image/png" />
+                                        <source srcSet="/top/member.webp" type="image/webp" />
+                                        <Image
+                                            src="/top/member.png"
+                                            alt="Ninja MetaveLive"
+                                            width={1016}
+                                            height={354}
+                                        />
+                                    </picture>
+                                </div>
+                                <div className={styles.box}>
+                                    <h4 className={styles.titleStyle}>
+                                        <Link href="/">
+                                            運営メンバー・会社情報
+                                        </Link>
+                                    </h4>
+                                </div>
+                            </div>
+                        </section>
+                        <section className='contact section-margin'>
+                            <div className='site-h3'>
+                                <h3>
+                                    CONTACT
+                                </h3>
+                            </div>
+                            <div className={styles.flex02}>
+                                <div className={styles.box}>
+                                    <picture>
+                                        <source media="(max-width: 768px)" srcSet="/top/houjin-sp.webp" type="image/webp" />
+                                        <source media="(max-width: 768px)" srcSet="/top/houjin-sp.png" type="image/png" />
+                                        <source srcSet="/top/houjin.webp" type="image/webp" />
+                                        <Image
+                                            src="/top/houjin.png"
+                                            alt="Ninja MetaveLive"
+                                            width={766}
+                                            height={214}
+                                        />
+                                    </picture>
+                                </div>
+                                <div className={styles.box}>
+                                    <h4 className={styles.titleStyle}>
+                                        <Link href="/">
+                                            お問い合わせ
+                                        </Link>
+                                    </h4>
+                                </div>
+                            </div>
                         </section>
                     </div>
                 </section>

@@ -85,6 +85,31 @@ body{
                 height: 25px;
             }
         }
+        &.guide-line{
+            display: block;
+            background-color: #fff;
+            width: 100%;
+            padding: 10px 0;
+            max-width: 256px;
+            margin: auto;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 16px;
+            color:#1C73DB;
+            border: 2px solid #1C73DB;
+            font-weight: bold;
+            position: relative;
+            transition: .4s ease;
+            &.top{
+                margin-top: 8px;
+            }
+            &:hover{
+                background-color: #303A56;
+                border: 2px solid #303A56;
+                color:#fff;
+                transition: .4s ease;
+            }
+        }
     }
     ul{
         list-style: none;
@@ -382,21 +407,70 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
     h3{
         font-weight: bold;
         font-size: 20px;
         text-align: center;
         color:#1C73DB;
-        width: 110px;
+        margin: 0 20px;
     }
     &::before{
         content:'';
         border-top: 4px dotted #1C73DB;
-        width: 43%;
+        width: 100%;
     }
     &::after{
         content:'';
         border-top: 4px dotted #1C73DB;
-        width: 43%;
+        width: 100%;
+    }
+}
+.link-flex-box{
+    @media(min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box{
+        margin-bottom: 35px;
+        @media(min-width: 575px) and (max-width:1199px){
+            display: flex;
+            justify-content: space-between;
+        }
+        .img{
+            width: 100%;
+        }
+        .text{
+            width: 100%;
+            .title-style{
+                a{
+                    color:#303A56;
+                }
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 23px;
+                padding-left: 25px;
+                position: relative;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                &::before{
+                    content:'';
+                    position: absolute;
+                    top: 50%;
+                    left: 0%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    background-image: url(/top/h4.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+        }
     }
 }
