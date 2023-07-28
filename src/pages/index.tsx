@@ -118,6 +118,13 @@ export default function Home() {
                                 </picture>
                             </button>
                         </React.Fragment>
+                        <section className='about section-margin'>
+                            <div className='site-h3'>
+                                <h3>
+                                    ABOUT
+                                </h3>
+                            </div>
+                        </section>
                     </div>
                 </section>
             </main>
