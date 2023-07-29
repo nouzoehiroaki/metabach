@@ -45,7 +45,7 @@ const Header: FC = () => {
                                     </Link>
                                     <ul className='sub'>
                                         <li>
-                                            <Link href="/">
+                                            <Link href="/metavelive">
                                                 NINJAメタバライブについて
                                             </Link>
                                         </li>
@@ -123,7 +123,7 @@ const Header: FC = () => {
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                        <Link href="/" onClick={closeMenu}>
+                                        <Link href="/metavelive" onClick={closeMenu}>
                                             NINJAメタバライブについて
                                         </Link>
                                     </li>
