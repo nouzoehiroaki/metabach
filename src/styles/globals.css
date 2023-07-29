@@ -479,4 +479,113 @@ header .menu-content .header-sns .box {
 .link-flex-box .box .text p {
   font-size: 14px;
 }
+
+.footer {
+  background-color: #111940;
+  padding-top: 45px;
+}
+.footer .sns-flame {
+  display: flex;
+  justify-content: space-between;
+  max-width: 230px;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 22px;
+}
+@media (min-width: 1200px) {
+  .footer .sns-flame {
+    max-width: 265px;
+  }
+}
+.footer .sns-flame .icon a {
+  transition: 0.3s ease;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer .sns-flame .icon a.twitter {
+  background-image: url(/defa-tw.svg);
+  width: 23px;
+  height: 20px;
+}
+.footer .sns-flame .icon a.twitter:hover {
+  transition: 0.3s ease;
+  background-image: url(/hov-tw.svg);
+}
+.footer .sns-flame .icon a.instagram {
+  background-image: url(/defa-insta.svg);
+  width: 23px;
+  height: 23px;
+}
+.footer .sns-flame .icon a.instagram:hover {
+  transition: 0.3s ease;
+  background-image: url(/hov-insta.svg);
+}
+.footer .sns-flame .icon a.discord {
+  background-image: url(/defa-discord.svg);
+  width: 24px;
+  height: 17px;
+}
+.footer .sns-flame .icon a.discord:hover {
+  transition: 0.3s ease;
+  background-image: url(/hov-discord.svg);
+}
+.footer .sns-flame .icon a.tiktok {
+  background-image: url(/defa-tiktok.svg);
+  width: 20px;
+  height: 25px;
+}
+.footer .sns-flame .icon a.tiktok:hover {
+  transition: 0.3s ease;
+  background-image: url(/hov-tiktok.svg);
+}
+.footer .sns-flame .icon a.opensea {
+  background-image: url(/defa-open.svg);
+  width: 23px;
+  height: 23px;
+}
+.footer .sns-flame .icon a.opensea:hover {
+  transition: 0.3s ease;
+  background-image: url(/hov-open.svg);
+}
+.footer .sns-flame .icon a.line {
+  background-image: url(/defa-line.svg);
+  width: 32px;
+  height: 32px;
+}
+.footer .sns-flame .icon a.line:hover {
+  transition: 0.3s ease;
+  background-image: url(/hov-line.svg);
+}
+.footer .footer-menu {
+  padding-left: 50px;
+}
+.footer .footer-menu nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-menu nav ul.box {
+  width: 100%;
+}
+.footer .footer-menu nav ul.sub {
+  margin-top: -20px;
+  padding-left: 20px;
+}
+.footer .footer-menu nav ul li a {
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  margin-bottom: 22px;
+  display: block;
+}
+.footer .footer-logo {
+  text-align: center;
+}
+.footer .footer-logo img {
+  display: block;
+  max-width: 52px;
+  margin: auto;
+}
 /*# sourceMappingURL=globals.css.map */
