@@ -493,82 +493,42 @@ header{
                 transition: 0.3s ease;
                 display: block;
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size:contain,0 0;
+                &:hover{
+                    transition: 0.3s ease;
+                    background-size:0 0,contain;
+                }
                 &.twitter {
-                    background-image: url(/defa-tw.svg);
+                    background-image:url(/defa-tw.svg),url(/hov-tw.svg);
                     width: 23px;
                     height: 20px;
-                    &:hover{
-                        transition: 0.3s ease;
-                        background-image: url(/hov-tw.svg);
-                    }
                 }
                 &.instagram {
-                    background-image: url(/defa-insta.svg);
+                    background-image:url(/defa-insta.svg),url(/hov-insta.svg);
                     width: 23px;
                     height: 23px;
-                    &:hover{
-                        transition: 0.3s ease;
-                        background-image: url(/hov-insta.svg);
-                    }
                 }
                 &.discord {
-                    background-image: url(/defa-discord.svg);
+                    background-image: url(/defa-discord.svg),url(/hov-discord.svg);
                     width: 24px;
                     height: 17px;
-                    &:hover{
-                        transition: 0.3s ease;
-                        background-image: url(/hov-discord.svg);
-                    }
                 }
                 &.tiktok {
-                    background-image: url(/defa-tiktok.svg);
+                    background-image: url(/defa-tiktok.svg),url(/hov-tiktok.svg);
                     width: 20px;
                     height: 25px;
-                    &:hover{
-                        transition: 0.3s ease;
-                        background-image: url(/hov-tiktok.svg);
-                    }
                 }
                 &.opensea {
-                    background-image: url(/defa-open.svg);
+                    background-image: url(/defa-open.svg),url(/hov-open.svg);
                     width: 23px;
                     height: 23px;
-                    &:hover{
-                        transition: 0.3s ease;
-                        background-image: url(/hov-open.svg);
-                    }
                 }
                 &.line {
-                    background-image: url(/defa-line.svg);
+                    background-image: url(/defa-line.svg),url(/hov-line.svg);
                     width: 32px;
                     height: 32px;
-                    &:hover{
-                        transition: 0.3s ease;
-                        background-image: url(/hov-line.svg);
-                    }
                 }
             }
-            
-            // &:hover .twitter {
-            //     transition: 0.5s ease;
-            //     content: url('/hov-tw.svg');
-            // }
-            // &:hover .Instagram {
-            //     content: url('/hov-insta.svg');
-            // }
-            // &:hover .tiktok {
-            //     content: url('/hov-tiktok.svg');
-            // }
-            // &:hover .discod {
-            //     content: url('/hov-discord.svg');
-            // }
-            // &:hover .opensea {
-            //     content: url('/hov-open.svg');
-            // }
-            // &:hover .line {
-            //     content: url('/hov-line.svg');
-            // }
         }
     }
     .footer-menu{
