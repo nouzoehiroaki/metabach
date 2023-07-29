@@ -8,7 +8,7 @@
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   to {
     opacity: 1;
@@ -18,7 +18,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   to {
     opacity: 1;
@@ -51,6 +51,19 @@
   width: 120px;
   height: 16px;
 }
+@media (min-width: 575px) {
+  .concept .h2::before {
+    background-image: url(/top/h20deco-r-tab.svg);
+    width: 239px;
+  }
+}
+@media (min-width: 768px) {
+  .concept .h2::before {
+    background-image: url(/top/h20deco-r-pc.svg);
+    width: 355px;
+    right: 0;
+  }
+}
 .concept .h2::after {
   content: "";
   position: absolute;
@@ -62,6 +75,19 @@
   width: 184px;
   height: 16px;
 }
+@media (min-width: 575px) {
+  .concept .h2::after {
+    background-image: url(/top/h20deco-l-tab.svg);
+    width: 312px;
+  }
+}
+@media (min-width: 768px) {
+  .concept .h2::after {
+    background-image: url(/top/h20deco-l-pc.svg);
+    width: 363px;
+    left: 0;
+  }
+}
 .concept .strong {
   color: #1C73DB;
   text-align: center;
@@ -72,14 +98,33 @@
   letter-spacing: 0.6px;
   margin-bottom: 50px;
 }
+@media (min-width: 575px) {
+  .concept .strong {
+    font-size: 24px;
+  }
+}
+@media (min-width: 575px) {
+  .concept .strong .newWindow {
+    font-size: 32px;
+  }
+}
 .concept .topPLetter {
   letter-spacing: 0.7px;
+}
+@media (min-width: 1200px) {
+  .concept .topPLetter {
+    letter-spacing: unset;
+  }
 }
 .concept .rium {
   display: inline-block;
   position: relative;
   color: #1C73DB;
   margin-right: 15px;
+  transition: 0.5s ease;
+}
+.concept .rium:hover {
+  opacity: 0.7;
 }
 .concept .rium::after {
   content: "";
@@ -115,6 +160,26 @@
 @media (min-width: 575px) {
   .concept .flex02 .box {
     width: 50%;
+    align-self: center;
+  }
+}
+.concept .flex02 .box picture {
+  display: block;
+}
+@media (min-width: 575px) {
+  .concept .flex02 .box picture {
+    max-width: 228px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .concept .flex02 .box picture {
+    max-width: 378px;
+  }
+}
+@media (min-width: 1200px) {
+  .concept .flex02 .box picture {
+    max-width: 508px;
   }
 }
 .concept .flex02 .box .titleStyle {
@@ -128,6 +193,12 @@
 }
 .concept .flex02 .box .titleStyle a {
   color: #303A56;
+}
+@media (min-width: 575px) {
+  .concept .flex02 .box .titleStyle {
+    font-size: 22px;
+    line-height: 33px;
+  }
 }
 .concept .flex02 .box .titleStyle::before {
   content: "";

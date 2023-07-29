@@ -33,7 +33,7 @@ export default function Footer() {
                 </div>
                 <div className='footer-menu'>
                     <nav>
-                        <ul className='box'>
+                        <ul className='box order01'>
                             <li>
                                 <Link href="/test" >
                                     トップページ
@@ -45,7 +45,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                         </ul>
-                        <ul className='box'>
+                        <ul className='box order02'>
                             <li>
                                 <Link href="/test" >
                                     めたばっちについて
@@ -64,7 +64,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                         </ul>
-                        <ul className='box'>
+                        <ul className='box order03'>
                             <li>
                                 <Link href="/test" >
                                     運営メンバー

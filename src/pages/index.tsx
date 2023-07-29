@@ -63,8 +63,9 @@ export default function Home() {
                         </p>
                         <strong className={styles.strong}>
                             このたび、NINJAメタバライブは
+                            <br className='tab-only'/>
                             <Link href="/test" className={styles.rium}>
-                                <span className='newWindow'>「Rium」</span>
+                                <span className={styles.newWindow}>「Rium」</span>
                             </Link>
                             と提携し、<br />
                             一緒にメタバース×NFTの未来を切り拓いていきます。
