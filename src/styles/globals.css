@@ -502,61 +502,41 @@ header .menu-content .header-sns .box {
   transition: 0.3s ease;
   display: block;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain, 0 0;
+}
+.footer .sns-flame .icon a:hover {
+  transition: 0.3s ease;
+  background-size: 0 0, contain;
 }
 .footer .sns-flame .icon a.twitter {
-  background-image: url(/defa-tw.svg);
+  background-image: url(/defa-tw.svg), url(/hov-tw.svg);
   width: 23px;
   height: 20px;
 }
-.footer .sns-flame .icon a.twitter:hover {
-  transition: 0.3s ease;
-  background-image: url(/hov-tw.svg);
-}
 .footer .sns-flame .icon a.instagram {
-  background-image: url(/defa-insta.svg);
+  background-image: url(/defa-insta.svg), url(/hov-insta.svg);
   width: 23px;
   height: 23px;
 }
-.footer .sns-flame .icon a.instagram:hover {
-  transition: 0.3s ease;
-  background-image: url(/hov-insta.svg);
-}
 .footer .sns-flame .icon a.discord {
-  background-image: url(/defa-discord.svg);
+  background-image: url(/defa-discord.svg), url(/hov-discord.svg);
   width: 24px;
   height: 17px;
 }
-.footer .sns-flame .icon a.discord:hover {
-  transition: 0.3s ease;
-  background-image: url(/hov-discord.svg);
-}
 .footer .sns-flame .icon a.tiktok {
-  background-image: url(/defa-tiktok.svg);
+  background-image: url(/defa-tiktok.svg), url(/hov-tiktok.svg);
   width: 20px;
   height: 25px;
 }
-.footer .sns-flame .icon a.tiktok:hover {
-  transition: 0.3s ease;
-  background-image: url(/hov-tiktok.svg);
-}
 .footer .sns-flame .icon a.opensea {
-  background-image: url(/defa-open.svg);
+  background-image: url(/defa-open.svg), url(/hov-open.svg);
   width: 23px;
   height: 23px;
 }
-.footer .sns-flame .icon a.opensea:hover {
-  transition: 0.3s ease;
-  background-image: url(/hov-open.svg);
-}
 .footer .sns-flame .icon a.line {
-  background-image: url(/defa-line.svg);
+  background-image: url(/defa-line.svg), url(/hov-line.svg);
   width: 32px;
   height: 32px;
-}
-.footer .sns-flame .icon a.line:hover {
-  transition: 0.3s ease;
-  background-image: url(/hov-line.svg);
 }
 .footer .footer-menu {
   padding-left: 50px;
