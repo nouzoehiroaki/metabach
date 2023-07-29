@@ -40,7 +40,7 @@ const Header: FC = () => {
                         <nav>
                             <ul className='main'>
                                 <li>
-                                    <Link href="/test" >
+                                    <Link href="/" >
                                         ABOUT
                                     </Link>
                                     <ul className='sub'>
@@ -50,29 +50,29 @@ const Header: FC = () => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/test">
+                                            <Link href="/metabatch">
                                                 めたばっちについて
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/">
+                                            <Link href="/rium">
                                                 Rium (提携先) について
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/test">
+                                    <Link href="/guidelines">
                                         GUIDELINES
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/">
+                                    <Link href="/members">
                                         MEMBERS
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://tayori.com/form/f88ab12b9ab0a5541c1d714ba757fe44b6a07794/" target="_blank" rel="noopener noreferrer">
+                                    <Link href="/contact" >
                                         CONTACT
                                     </Link>
                                 </li>
@@ -118,7 +118,7 @@ const Header: FC = () => {
                     <nav>
                         <ul className='main'>
                             <li>
-                                <Link href="/test" onClick={closeMenu}>
+                                <Link href="/" onClick={closeMenu}>
                                     ABOUT
                                 </Link>
                                 <ul className='sub'>
@@ -128,29 +128,29 @@ const Header: FC = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/test" onClick={closeMenu}>
+                                        <Link href="/metabatch" onClick={closeMenu}>
                                             めたばっちについて
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/" onClick={closeMenu}>
+                                        <Link href="/rium" onClick={closeMenu}>
                                             Rium (提携先) について
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <Link href="/test" onClick={closeMenu}>
+                                <Link href="/guidelines" onClick={closeMenu}>
                                     GUIDELINES
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/" onClick={closeMenu}>
+                                <Link href="/members" onClick={closeMenu}>
                                     MEMBERS
                                 </Link>
                             </li>
                             <li>
-                                <Link href="https://tayori.com/form/f88ab12b9ab0a5541c1d714ba757fe44b6a07794/" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
+                                <Link href="/contact" onClick={closeMenu} >
                                     CONTACT
                                 </Link>
                             </li>

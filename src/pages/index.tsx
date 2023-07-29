@@ -64,14 +64,14 @@ export default function Home() {
                         <strong className={styles.strong}>
                             このたび、NINJAメタバライブは
                             <br className='tab-only'/>
-                            <Link href="/test" className={styles.rium}>
+                            <Link href="/rium" className={styles.rium}>
                                 <span className={styles.newWindow}>「Rium」</span>
                             </Link>
                             と提携し、<br />
                             一緒にメタバース×NFTの未来を切り拓いていきます。
                         </strong>
                         <div className={styles.flex}>
-                            <Link href="/test" className='btn01'>プレスリリース</Link>
+                            <Link href="/" className='btn01' target="_blank" rel="noopener noreferrer">プレスリリース</Link>
                             <button className={`${styles.margin01} newOrder`} onClick={toggleMenu}>
                                 <picture>
                                     <source srcSet="/newOrder.webp" type="image/webp" />
@@ -128,7 +128,7 @@ export default function Home() {
                             <div className='link-flex-box'>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/">
+                                        <Link href="/metavelive">
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/top/ninjametavelive-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/top/ninjametavelive-sp.png" type="image/png" />
@@ -144,7 +144,7 @@ export default function Home() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="">
+                                            <Link href="/metavelive">
                                                 NINJAメタバライブ
                                             </Link>
                                         </h4>
@@ -155,7 +155,7 @@ export default function Home() {
                                 </div>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/">
+                                        <Link href="/metabatch">
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/top/metabatch-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/top/metabatch-sp.png" type="image/png" />
@@ -171,21 +171,21 @@ export default function Home() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="/">
+                                            <Link href="/metabatch">
                                                 めたばっち
                                             </Link>
                                         </h4>
                                         <p className={styles.topPLetter}>
                                             メタバースの妖精。NINJAメタバライブが2022年12月にリリースしたジェネラティブNFTのキャラクターです。
                                         </p>
-                                        <Link href="/" className='guide-line top'>
+                                        <Link href="/guidelines" className='guide-line top'>
                                             二次創作ガイドラインはこちら
                                         </Link>
                                     </div>
                                 </div>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/">
+                                        <Link href="/rium">
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/top/rium-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/top/rium-sp.png" type="image/png" />
@@ -201,7 +201,7 @@ export default function Home() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="/">
+                                            <Link href="/rium">
                                                 Rium
                                             </Link>
                                         </h4>
@@ -235,7 +235,7 @@ export default function Home() {
                                 </div>
                                 <div className={styles.box}>
                                     <h4 className={styles.titleStyle}>
-                                        <Link href="/">
+                                        <Link href="/members">
                                             運営メンバー・会社情報
                                         </Link>
                                     </h4>
@@ -264,7 +264,7 @@ export default function Home() {
                                 </div>
                                 <div className={styles.box}>
                                     <h4 className={styles.titleStyle}>
-                                        <Link href="/">
+                                        <Link href="/contact">
                                             お問い合わせ
                                         </Link>
                                     </h4>

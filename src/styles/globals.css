@@ -457,6 +457,53 @@ header .menu-content .header-sns .box {
   }
 }
 
+.underPage-h1 {
+  font-size: 24px;
+  color: #303A56;
+  line-height: 37px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 30px;
+}
+@media (min-width: 575px) {
+  .underPage-h1 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .underPage-h1 {
+    font-size: 40px;
+  }
+}
+.underPage-h1 span {
+  display: block;
+  line-height: 23px;
+  font-size: 16px;
+  color: #1C73DB;
+  margin-bottom: 6px;
+}
+.underPage-h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -25px;
+  background-image: url(/under/h1deco-sp.svg);
+  background-repeat: no-repeat;
+  width: 313px;
+  height: 23px;
+}
+@media (min-width: 768px) {
+  .underPage-h1::before {
+    background-image: url(/under/h1deco-pc.svg);
+    width: 371px;
+    right: 0;
+  }
+}
+
 .site-h3 {
   position: relative;
   display: flex;
