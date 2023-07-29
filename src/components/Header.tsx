@@ -81,13 +81,15 @@ const Header: FC = () => {
                     </div>
                     <div className='logo-area'>
                         <div className='metavelive-logo-box'>
-                            <Image
-                                src="/metavelive-logo.svg"
-                                alt="Metavelive Logo"
-                                className="metavelive-logo"
-                                width={142}
-                                height={56}
-                            />
+                            <Link href="/">
+                                <Image
+                                    src="/metavelive-logo.svg"
+                                    alt="Metavelive Logo"
+                                    className="metavelive-logo"
+                                    width={142}
+                                    height={56}
+                                />
+                            </Link>
                         </div>
                         <div className='logo-box'>
                             <Image

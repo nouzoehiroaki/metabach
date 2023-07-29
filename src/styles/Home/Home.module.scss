@@ -6,7 +6,7 @@
     @keyframes fadeIn { 
         from {
             opacity: 0;
-            transform: translateY(-10px);
+            transform: translateY(-5px);
         }
         to {
             opacity: 1;
@@ -34,6 +34,15 @@
             background-repeat: no-repeat;
             width: 120px;
             height: 16px;
+            @media (min-width: 575px) {
+                background-image: url(/top/h20deco-r-tab.svg);
+                width: 239px;
+            }
+            @media (min-width: 768px) {
+                background-image: url(/top/h20deco-r-pc.svg);
+                width: 355px;
+                right: 0;
+            }
         }
         &::after{
             content:'';
@@ -45,6 +54,15 @@
             background-repeat: no-repeat;
             width: 184px;
             height: 16px;
+            @media (min-width: 575px) {
+                background-image: url(/top/h20deco-l-tab.svg);
+                width: 312px;
+            }
+            @media (min-width: 768px) {
+                background-image: url(/top/h20deco-l-pc.svg);
+                width: 363px;
+                left: 0;
+            }
         }
     }
     .strong{
@@ -56,15 +74,30 @@
         margin-top: 60px;
         letter-spacing: .6px;
         margin-bottom: 50px;
+        @media (min-width: 575px) {
+            font-size: 24px;
+        }
+        .newWindow{
+            @media (min-width: 575px) {
+                font-size: 32px;
+            }
+        }
     }
     .topPLetter{
         letter-spacing: .7px;
+        @media (min-width: 1200px) {
+            letter-spacing:unset;
+        }
     }
     .rium{
         display: inline-block;
         position: relative;
         color:#1C73DB;
         margin-right: 15px;
+        transition: .5s ease;
+        &:hover{
+            opacity: .7;
+        }
         &::after{
             content:'';
             position: absolute;
@@ -97,6 +130,20 @@
         .box{
             @media (min-width: 575px) {
                 width: 50%;
+                align-self: center;
+            }
+            picture{
+                display: block;
+                @media (min-width: 575px) {
+                    max-width: 228px;
+                    margin: auto;
+                }
+                @media (min-width: 768px) {
+                    max-width: 378px;
+                }
+                @media (min-width: 1200px) {
+                    max-width: 508px;
+                }
             }
             .titleStyle{
                 a{
@@ -109,6 +156,10 @@
                 position: relative;
                 margin-top: 10px;
                 margin-bottom: 5px;
+                @media (min-width: 575px) {
+                    font-size: 22px;
+                    line-height: 33px;
+                }
                 &::before{
                     content:'';
                     position: absolute;
