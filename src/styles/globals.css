@@ -15,7 +15,7 @@ body a.discordLink {
   display: block;
   background-color: #1C73DB;
   width: 100%;
-  padding: 15.5px 0;
+  padding: 12px 0;
   max-width: 208px;
   margin: auto;
   border-radius: 20px;
@@ -112,6 +112,9 @@ body a.guide-line.top {
     margin-right: auto;
   }
 }
+body a.guide-line.metabach {
+  margin-top: 24px;
+}
 body a.guide-line:hover {
   background-color: #303A56;
   border: 2px solid #303A56;
@@ -153,6 +156,9 @@ body button.videoThum {
 body button.videoThum.hidden {
   opacity: 0;
   transition: 0.4s ease;
+}
+body button.videoThum.metabach {
+  margin-bottom: 30px;
 }
 body img {
   width: 100%;

@@ -151,9 +151,10 @@ export default function Metavelive() {
                                     </div>
                                 </div>
                             </div>
-                            <Link href="" className='twitter-link metavelive'>
+                            <Link href="https://twitter.com/ninjametavelive" className='twitter-link metavelive' target="_blank" rel="noopener noreferrer">
                                 <span>
-                                    最新のライブ開催情報をチェック！</span>
+                                    最新のライブ開催情報をチェック！
+                                </span>
                             </Link>
                         </section>
                         <section className={`${MLstyles.contents} section-margin`}>

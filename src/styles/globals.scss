@@ -13,7 +13,7 @@ body{
             display: block;
             background-color: #1C73DB;
             width: 100%;
-            padding: 15.5px 0;
+            padding: 12px 0;
             max-width: 208px;
             margin: auto;
             border-radius: 20px;
@@ -107,6 +107,9 @@ body{
                     margin-right: auto;
                 }
             }
+            &.metabach{
+                margin-top: 24px;
+            }
             &:hover{
                 background-color: #303A56;
                 border: 2px solid #303A56;
@@ -146,6 +149,9 @@ body{
             &.hidden{
                 opacity: 0;
                 transition: .4s ease;
+            }
+            &.metabach{
+                margin-bottom: 30px;
             }
         }
     }
