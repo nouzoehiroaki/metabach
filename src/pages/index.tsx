@@ -58,8 +58,8 @@ export default function Home() {
                             コミュニティで、<span className='color'>遊</span>ぼう。
                         </h2>
                         <p className={`${styles.topPLetter} base16 top`}>
-                            国産メタバースプラットフォーム「Rium」は、コミュニティに根差した「遊び場」を提供します。圧倒的な「動作の軽さ」と「音質の良さ」で、仲間と一緒に遊んじゃおう!<br />
-                            NINJAメタバライブは、メタバースライブを1年半で約40回やってきたプロ集団。
+                            NINJAメタバライブは、メタバースライブを1年半で約40回やってきたプロ集団。<br />
+                            国産メタバースプラットフォーム「Rium」は、コミュニティに根差した「遊び場」を提供します。圧倒的な「動作の軽さ」と「音質の良さ」で、仲間と一緒に遊んじゃおう!
                         </p>
                         <strong className={styles.strong}>
                             このたび、NINJAメタバライブは

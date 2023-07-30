@@ -103,6 +103,12 @@
   margin: auto;
   display: block;
 }
+.modal .topPosi .center {
+  text-align: center;
+}
+.modal .topPosi .center a {
+  display: inline-block;
+}
 .modal .topPosi a {
   transition: 0.4s ease;
 }
