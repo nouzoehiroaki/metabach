@@ -1,0 +1,51 @@
+.wrap{
+    @media (min-width: 768px) {
+        max-width: 918px;
+        margin: auto;
+    }
+    p{
+        text-align: center;
+        color:#303A56;
+        margin-bottom: 30px;
+        span{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        &.topPLetter{
+            text-align: left;
+        }
+    }
+    .flex01{
+        padding-bottom: 54px;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content:space-between;
+            max-width: 700px;
+            margin: auto;
+        }
+        .box{
+            @media (min-width: 768px) {
+                width: 50%;
+            }
+            .img{
+                max-width: 316px;
+                display: block;
+                margin: auto;
+            }
+            a{
+                transition: .4s ease;
+                &:hover{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+    .imgPosi{
+        text-align: right;
+        img{
+            display: block;
+            max-width: 495px;
+            margin-left: auto;
+        }
+    }
+}

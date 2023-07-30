@@ -71,7 +71,7 @@ export default function Home() {
                             一緒にメタバース×NFTの未来を切り拓いていきます。
                         </strong>
                         <div className={styles.flex}>
-                            <Link href="/" className='btn01' target="_blank" rel="noopener noreferrer">プレスリリース</Link>
+                            <Link href="https://prtimes.jp/main/html/rd/p/000000002.000123671.html" className='btn01' target="_blank" rel="noopener noreferrer">プレスリリース</Link>
                             <button className={`${styles.margin01} newOrder`} onClick={toggleMenu}>
                                 <picture>
                                     <source srcSet="/newOrder.webp" type="image/webp" />

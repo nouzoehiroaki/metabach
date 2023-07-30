@@ -98,6 +98,11 @@
   font-weight: bold;
   margin: 30px 0;
 }
+@media (min-width: 768px) {
+  .wrap .contents h5 {
+    font-size: 24px;
+  }
+}
 .wrap .contents p {
   color: #303A56;
   font-size: 14px;
