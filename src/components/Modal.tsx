@@ -41,19 +41,21 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
                         新しいコミュニティ「めたばDAO」を立ち上げました!
                         メタバースにワクワクする人、ぜひ遊びに来てください！
                     </p>
-                    <Link href="/test">
-                        <picture>
-                            <source srcSet="/metaveDAO.webp" type="image/webp" />
-                            <Image
-                                src="/metaveDAO.png"
-                                alt="メタバースにワクワクする人が一緒にワクワクできる仲間を作れるコミュニティー"
-                                width={316}
-                                height={316}
-                                className={modalstyle.img}
-                            />
-                        </picture>
-                    </Link>
-                    <Link href="/test" className='discordLink top'>
+                    <div className={modalstyle.center}>
+                        <Link href="https://discord.com/invite/SSwQwfUn3h" target="_blank" rel="noopener noreferrer">
+                            <picture>
+                                <source srcSet="/metaveDAO.webp" type="image/webp" />
+                                <Image
+                                    src="/metaveDAO.png"
+                                    alt="メタバースにワクワクする人が一緒にワクワクできる仲間を作れるコミュニティー"
+                                    width={316}
+                                    height={316}
+                                    className={modalstyle.img}
+                                />
+                            </picture>
+                        </Link>
+                    </div>
+                    <Link href="https://discord.com/invite/SSwQwfUn3h" className='discordLink top'  target="_blank" rel="noopener noreferrer">
                         Discordサーバーへ
                     </Link>
                 </main>
