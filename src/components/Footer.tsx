@@ -18,7 +18,7 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className='icon'>
-                        <Link href="/"  target="_blank" rel="noopener noreferrer" className='tiktok'>
+                        <Link href="https://www.tiktok.com/@metabatch_?lang=ja-JP"  target="_blank" rel="noopener noreferrer" className='tiktok'>
                         </Link>
                     </div>
                     <div className='icon'>
@@ -26,7 +26,7 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className='icon'>
-                        <Link href="/"  target="_blank" rel="noopener noreferrer" className='line'>
+                        <Link href="https://line.me/R/ti/p/@366ctfwh"  target="_blank" rel="noopener noreferrer" className='line'>
                         </Link>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Footer() {
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                        <Link href="/" >
+                                        <Link href="/members" >
                                             会社情報
                                         </Link>
                                     </li>

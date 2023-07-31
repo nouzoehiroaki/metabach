@@ -170,7 +170,7 @@ export default function Metavelive() {
                                 <ModalVideo 
                                     channel='youtube'  
                                     isOpen={isOpen} 
-                                    videoId="8FECQWjrzjA" 
+                                    videoId="7gSSecQxS_s" 
                                     onClose={closeVideoModal}
                                 />
                                 <button className="videoThum" onClick={openModal}>
@@ -178,7 +178,7 @@ export default function Metavelive() {
                                         <source srcSet="/under/Metavelive/song.webp" type="image/webp" />
                                         <Image
                                             src="/under/Metavelive/song.png"
-                                            alt="オープニング動画"
+                                            alt="メタバライブの歌"
                                             width={1524}
                                             height={857}
                                         />

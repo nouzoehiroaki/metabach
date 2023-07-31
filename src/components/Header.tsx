@@ -40,7 +40,7 @@ const Header: FC = () => {
                         <nav>
                             <ul className='main'>
                                 <li>
-                                    <Link href="/" >
+                                    <Link href="#" >
                                         ABOUT
                                     </Link>
                                     <ul className='sub'>
@@ -118,7 +118,7 @@ const Header: FC = () => {
                     <nav>
                         <ul className='main'>
                             <li>
-                                <Link href="/" onClick={closeMenu}>
+                                <Link href="#" onClick={closeMenu}>
                                     ABOUT
                                 </Link>
                                 <ul className='sub'>
@@ -203,7 +203,7 @@ const Header: FC = () => {
                                 </Link>
                             </div>
                             <div className='icon'>
-                                <Link href="/" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
+                                <Link href="https://www.tiktok.com/@metabatch_?lang=ja-JP" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/tiktok.svg"
                                         alt="tiktok"
@@ -214,7 +214,7 @@ const Header: FC = () => {
                                 </Link>
                             </div>
                             <div className='icon'>
-                                <Link href="/" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
+                                <Link href="https://line.me/R/ti/p/@366ctfwh" onClick={closeMenu} target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/line.svg"
                                         alt="line"
