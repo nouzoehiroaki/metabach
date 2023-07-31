@@ -1,0 +1,36 @@
+.wrap{
+    @media (min-width: 768px) {
+        max-width: 918px;
+        margin: auto;
+    }
+    p{
+        text-align: justify;
+        color:#303A56;
+        margin-bottom: 24px;
+        &.pes{
+            margin-top: 78px;
+            margin-bottom:135px ;
+            text-align: right;
+        }
+    }
+    .guideline{
+        color:#303A56;
+        position: relative;
+        text-decoration:revert;
+        padding-right: 30px;
+        &::after{
+            content:'';
+            position: absolute;
+            top: 50%;
+            right:14px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            background-image: url(/newWindowG.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 13px;
+            height: 13px;
+        }
+    }
+}

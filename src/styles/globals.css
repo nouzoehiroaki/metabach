@@ -30,6 +30,11 @@ body a.discordLink {
 body a.discordLink.top {
   margin-top: 24px;
 }
+@media (max-width: 767px) {
+  body a.discordLink.metabatch {
+    margin-bottom: 24px;
+  }
+}
 body a.discordLink:hover {
   opacity: 0.7;
   transition: 0.4s ease;

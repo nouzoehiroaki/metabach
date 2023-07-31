@@ -7,13 +7,33 @@ import ModalVideo from 'react-modal-video';
 import 'react-modal-video/scss/modal-video.scss';
 
 export default function Metabatch() {
-    const [isOpen, setIsOpen] = useState(false);
-    const openModal = () => {
+    const [isOpen1, setIsOpen1] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+    const [isOpen3, setIsOpen3] = useState(false);
+    const openModal1 = () => {
         document.cookie = 'myCookie=myValue; SameSite=None; Secure';
-        setIsOpen(true);
+        setIsOpen1(true);
     };
-    const closeVideoModal = () => {
-        setIsOpen(false);
+
+    const openModal2 = () => {
+        document.cookie = 'myCookie=myValue; SameSite=None; Secure';
+        setIsOpen2(true);
+    };
+
+    const openModal3 = () => {
+        document.cookie = 'myCookie=myValue; SameSite=None; Secure';
+        setIsOpen3(true);
+    };
+    const closeVideoModal1 = () => {
+        setIsOpen1(false);
+    };
+
+    const closeVideoModal2 = () => {
+        setIsOpen2(false);
+    };
+
+    const closeVideoModal3 = () => {
+        setIsOpen3(false);
     };
     return (
         <>
@@ -36,11 +56,11 @@ export default function Metabatch() {
                         <React.Fragment>
                             <ModalVideo 
                                 channel='youtube'  
-                                isOpen={isOpen} 
+                                isOpen={isOpen1} 
                                 videoId="ZlFusgy5kpo" 
-                                onClose={closeVideoModal}
+                                onClose={closeVideoModal1}
                             />
-                            <button className="videoThum metabach" onClick={openModal}>
+                            <button className="videoThum metabach" onClick={openModal1}>
                                 <picture>
                                     <source media="(max-width: 768px)" srcSet="/under/Metabatch/thum01-sp.webp" type="image/webp" />
                                     <source media="(max-width: 768px)" srcSet="/under/Metabatch/thum01-sp.png" type="image/png" />
@@ -57,16 +77,16 @@ export default function Metabatch() {
                         <p>
                             あ、Meのことまだ知らないっちね<br /><br />
 
-                            めたばっちはメタバライブが作り出す「メタバの渦」をもっともっと拡げるために、メタバライブ1周年のときに産まれた<br className='spOnly'/>「<span>メタバースの妖精</span>」っち!
+                            めたばっちはメタバライブが作り出す「メタバの渦」をもっともっと拡げるために、メタバライブ1周年のときに産まれた<br />「<span>メタバースの妖精</span>」っち!
                         </p>
                         <React.Fragment>
                             <ModalVideo 
                                 channel='youtube'  
-                                isOpen={isOpen} 
+                                isOpen={isOpen2} 
                                 videoId="8FECQWjrzjA" 
-                                onClose={closeVideoModal}
+                                onClose={closeVideoModal2}
                             />
-                            <button className="videoThum metabach" onClick={openModal}>
+                            <button className="videoThum metabach" onClick={openModal2}>
                                 <picture>
                                     <source media="(max-width: 768px)" srcSet="/under/Metabatch/thum02-sp.webp" type="image/webp" />
                                     <source media="(max-width: 768px)" srcSet="/under/Metabatch/thum02-sp.png" type="image/png" />
@@ -87,11 +107,11 @@ export default function Metabatch() {
                         <React.Fragment>
                             <ModalVideo 
                                 channel='youtube'  
-                                isOpen={isOpen} 
+                                isOpen={isOpen3} 
                                 videoId="Z7iFsg6jehw" 
-                                onClose={closeVideoModal}
+                                onClose={closeVideoModal3}
                             />
-                            <button className="videoThum metabach" onClick={openModal}>
+                            <button className="videoThum metabach" onClick={openModal3}>
                                 <picture>
                                     <source media="(max-width: 768px)" srcSet="/under/Metabatch/thum03-sp.webp" type="image/webp" />
                                     <source media="(max-width: 768px)" srcSet="/under/Metabatch/thum03-sp.png" type="image/png" />
@@ -126,7 +146,7 @@ export default function Metabatch() {
                                         />
                                     </picture>
                                 </Link>
-                                <Link href="https://discord.com/invite/SSwQwfUn3h" className='discordLink top'  target="_blank" rel="noopener noreferrer">
+                                <Link href="https://discord.com/invite/SSwQwfUn3h" className='discordLink top metabatch'  target="_blank" rel="noopener noreferrer">
                                     Discordサーバーへ
                                 </Link>
                             </div>
@@ -152,7 +172,7 @@ export default function Metabatch() {
                             <div className='link-flex-box'>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://shop.metabatch.me/" target="_blank" rel="noopener noreferrer">
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/onlineshop-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/onlineshop-sp.png" type="image/png" />
@@ -168,7 +188,7 @@ export default function Metabatch() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="/" target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://shop.metabatch.me/" target="_blank" rel="noopener noreferrer">
                                                 公式オンラインショップ
                                             </Link>
                                         </h4>
@@ -179,7 +199,7 @@ export default function Metabatch() {
                                 </div>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://line.me/R/ti/p/@366ctfwh" target="_blank" rel="noopener noreferrer">
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/line-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/line-sp.png" type="image/png" />
@@ -195,7 +215,7 @@ export default function Metabatch() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="/" target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://line.me/R/ti/p/@366ctfwh" target="_blank" rel="noopener noreferrer">
                                                 公式LINE
                                             </Link>
                                         </h4>

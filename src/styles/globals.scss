@@ -27,6 +27,11 @@ body{
             &.top{
                 margin-top: 24px;
             }
+            &.metabatch{
+                @media (max-width:767px){
+                    margin-bottom: 24px;
+                }
+            }
             &:hover{
                 opacity: .7;
                 transition: .4s ease;
