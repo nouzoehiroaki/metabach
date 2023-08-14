@@ -82,7 +82,7 @@ body a.btn01::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: 7%;
+  right: 10%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -197,6 +197,18 @@ body h2 span.en {
 body h2 span.color {
   color: #1C73DB;
 }
+body h2.h2-blue {
+  color: #1C73DB;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+}
+@media (min-width: 768px) {
+  body h2.h2-blue {
+    font-size: 24px;
+  }
+}
 body p {
   text-align: justify;
 }
@@ -250,6 +262,12 @@ body .container {
 
 @media (min-width: 768px) {
   .tab-only {
+    display: none;
+  }
+}
+
+@media (max-width: 574px) {
+  .pcOnly {
     display: none;
   }
 }
@@ -534,7 +552,7 @@ header .menu-content .header-sns .box {
 }
 .site-h3 h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: #1C73DB;
   margin: 0 20px;
