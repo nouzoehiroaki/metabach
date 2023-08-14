@@ -1,0 +1,186 @@
+.wrap{
+    @media (min-width: 768px) {
+        max-width: 918px;
+        margin: auto;
+    }
+    p{
+        text-align: justify;
+        color:#303A56;
+        &.mb01{
+            margin-bottom: 36px;
+        }
+        &.lastText{
+            text-align: center;
+            margin-bottom: 56px;
+        }
+    }
+    .flexBox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (min-width: 768px) {
+            flex-wrap: unset;
+        }
+        p{
+            width:100%;
+            @media (min-width: 768px) {
+                max-width: 630px;
+            }
+            align-self: center;
+        }
+        .img{
+            width:100%;
+            max-width: 276px;
+            @media (max-width: 767px) {
+                margin: auto;
+            }
+        }
+    }
+    .strong{
+        color:#303A56;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 48px;
+        @media (min-width: 768px) {
+            font-size: 36px;
+        }
+    }
+    h3{
+        color:#303A56;
+        font-size: 24px;
+        position: relative;
+        padding-bottom: 3px;
+        line-height: 35px;
+        display: inline-block;
+        padding-left: 80px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #1C73DB;
+        @media (max-width: 574px) {
+            font-size: 16px;
+            padding-bottom: 2px;
+            padding-left: 65px;
+            line-height: 25px;
+        }
+        @media (max-width: 767px) {
+            display: block;
+        }
+        &::before{
+            content:'';
+            background-image: url(/under/Rium/rectangle.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 67px;
+            height: 31px;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            z-index: 2;
+        }
+        &::after{
+            content:'';
+            border-bottom: 2px solid #EEF2F7;
+            width: 30px;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+        }
+    }
+    span{
+        &.tag{
+            padding: 3px 15px;
+            border-radius: 20px;
+            color: #303A56;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 14px;
+            margin-left: 10px;
+            @media (max-width: 767px) {
+                display: block;
+                padding: 4px 15px;
+                font-size: 12px;
+                text-align: center;
+                width: 91px;
+                margin-left:auto;
+                margin-bottom: 15px;
+            }
+            &.yellow{
+                background-color: #FFDC58;
+            }
+            &.emerald{
+                background-color: #96E3D4;
+            }
+        }
+    }
+    .eventContBox{
+        margin-bottom: 108px;
+        &.last{
+            margin-bottom:0;
+        }
+    }
+    .box{
+        max-width: 516px;
+        margin: auto;
+        width: 100%;
+    }
+    a{
+        &.snsBtn{
+            display: block;
+            width: 229px;
+            height: 46px;
+            color:#303A56;
+            position: relative;
+            border-radius: 50px;
+            background-color: #fff;
+            font-size: 16px;
+            text-align: center;
+            line-height: 37px;
+            transition: all .4s ease;
+            @media (max-width: 574px) {
+                margin: auto;
+            }
+            &:hover{
+                opacity: .7;
+            }
+            &.twitter{
+                border: 2px solid #1B9DF0;
+                @media (max-width: 574px) {
+                    margin-bottom:20px;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 15px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    background-image: url(/hov-tw.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 20px;
+                    height: 17px;
+                }
+            }
+            &.discord{
+                border: 2px solid #5865F2;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 15px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    background-image: url(/under/Rium/discord.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 20px;
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
