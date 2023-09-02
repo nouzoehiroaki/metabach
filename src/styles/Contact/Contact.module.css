@@ -1,0 +1,342 @@
+@media (min-width: 768px) {
+  .wrap {
+    max-width: 918px;
+    margin: auto;
+  }
+}
+.wrap h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 33px;
+}
+@media (max-width: 767px) {
+  .wrap h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap h2 {
+    font-size: 20px;
+  }
+}
+.wrap h2 span {
+  color: #1C73DB;
+}
+.wrap h2 span.one {
+  font-size: 24px;
+  display: block;
+  line-height: 35px;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .wrap h2 span.one {
+    font-size: 20px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap h2 span.one {
+    font-size: 16px;
+  }
+}
+.wrap .listBox {
+  background-color: #E3E3E3;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  max-width: 868px;
+  margin: 0 auto 55px;
+}
+@media (max-width: 767px) {
+  .wrap .listBox {
+    padding: 23px 10px 23px 0;
+  }
+}
+.wrap .listBox .img {
+  width: 100px;
+  margin-right: 30px;
+}
+.wrap .listBox .li {
+  color: #575757;
+  width: 80%;
+}
+.wrap .listBox .li ul {
+  list-style: disc;
+}
+.wrap .listBox .li ul li {
+  line-height: 35px;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .wrap .listBox .li ul li {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap .listBox .li ul li {
+    font-size: 13px;
+  }
+}
+.wrap .listBox .li ul li:last-child {
+  margin-bottom: 0;
+}
+.wrap h3 {
+  text-align: center;
+  color: #303A56;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .wrap h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap h3 {
+    font-size: 16px;
+  }
+}
+.wrap .p01 {
+  color: #467778;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 33px;
+}
+@media (max-width: 767px) {
+  .wrap .p01 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap .p01 {
+    font-size: 13px;
+  }
+}
+.wrap .strengthsBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 868px;
+  margin: 0 auto 49px;
+}
+@media (max-width: 767px) {
+  .wrap .strengthsBox {
+    margin-bottom: 43px;
+    justify-content: center;
+  }
+}
+.wrap .strengthsBox .left, .wrap .strengthsBox .right {
+  max-width: 410px;
+  width: 50%;
+  background-color: #C5E4DE;
+  padding: 25px 20px 40px;
+}
+@media (max-width: 767px) {
+  .wrap .strengthsBox .left, .wrap .strengthsBox .right {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .wrap .strengthsBox .left {
+    margin-bottom: 30px;
+  }
+}
+.wrap .strengthsBox h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #303A56;
+  text-decoration: underline;
+  margin: 20px 0;
+  text-align: center;
+  padding-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .wrap .strengthsBox h4 {
+    text-decoration: none;
+    border-bottom: 1px solid #303A56;
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap .strengthsBox h4 {
+    font-size: 13px;
+  }
+}
+.wrap .strengthsBox ul {
+  list-style: disc;
+  text-indent: 0;
+  padding-left: 20px;
+}
+.wrap .strengthsBox ul li {
+  color: #303A56;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .wrap .strengthsBox ul {
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap .strengthsBox ul {
+    font-size: 13px;
+  }
+}
+.wrap .link {
+  display: block;
+  background-color: #1C73DB;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  height: 46px;
+  position: relative;
+  line-height: 46px;
+  margin: auto;
+  border-radius: 30px;
+}
+@media (max-width: 767px) {
+  .wrap .link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap .link {
+    font-size: 14px;
+  }
+}
+.wrap .link.typeA {
+  max-width: 461px;
+}
+.wrap .link.typeB {
+  max-width: 400px;
+}
+.wrap .link::after {
+  content: "";
+  background-image: url(/under/Contact/arrow.svg);
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.wrap .pt02 {
+  color: #1C73DB;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 11px;
+}
+@media (max-width: 767px) {
+  .wrap .pt02 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap .pt02 {
+    font-size: 13px;
+  }
+}
+.wrap .pt03 {
+  text-align: center;
+  margin-bottom: 31px;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .wrap .pt03 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .wrap .pt03 {
+    font-size: 13px;
+  }
+}
+
+.border {
+  border-top: 4px dotted #1c73db;
+}
+
+.sec02, .sec03 {
+  margin-top: 76px;
+  padding-top: 76px;
+}
+@media (max-width: 767px) {
+  .sec02, .sec03 {
+    margin-top: 44px;
+    padding-top: 44px;
+  }
+}
+.sec02 .center, .sec03 .center {
+  background-color: #C5E4DE;
+  padding: 20px 48px 37px;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .sec02 .center, .sec03 .center {
+    padding: 20px 24px 37px;
+  }
+}
+.sec02 .center h3, .sec03 .center h3 {
+  color: #303A56;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .sec02 .center h3, .sec03 .center h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .sec02 .center h3, .sec03 .center h3 {
+    font-size: 13px;
+  }
+}
+.sec02 .center ul, .sec03 .center ul {
+  list-style: disc;
+  text-indent: 0;
+  padding-left: 20px;
+}
+.sec02 .center ul li, .sec03 .center ul li {
+  color: #303A56;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .sec02 .center ul li, .sec03 .center ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 585px) {
+  .sec02 .center ul li, .sec03 .center ul li {
+    font-size: 13px;
+  }
+}
+.sec02 .imgBox, .sec03 .imgBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-bottom: 57px;
+}
+.sec02 .imgBox .img, .sec03 .imgBox .img {
+  width: 50%;
+}
+.sec02 .imgBox .img img, .sec03 .imgBox .img img {
+  max-width: 411px;
+  aspect-ratio: 16/9;
+}
+
+.sec03 {
+  padding-bottom: 108px;
+}
+/*# sourceMappingURL=Contact.module.css.map */
