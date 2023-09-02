@@ -21,7 +21,7 @@ export default function Members() {
                                 <div className={MBstyles.member}>
                                     <div className={MBstyles.img}>
                                         <picture>
-                                            <source media="(max-width: 768px)" srcSet="/under/Members/pessham.webp" type="image/webp" />
+                                            <source srcSet="/under/Members/pessham.webp" type="image/webp" />
                                             <Image
                                                 src="/under/Members/pessham.png"
                                                 alt="ペスハム / Pessham"
