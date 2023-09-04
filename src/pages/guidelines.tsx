@@ -1,18 +1,12 @@
 import Head from 'next/head'
 import GLstyles from '@/styles/Guidelines/Guidelines.module.scss'
 import Link from 'next/link';
-import { motion } from 'framer-motion'
 export default function Guidelines() {
     return (
         <>
             <Head>
                 <title>めたばっちの二次創作ガイドライン | メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
-            <motion.div
-                initial={{ opacity: 0 }} // 初期状態
-                animate={{ opacity: 1 }} // マウント時
-                exit={{ opacity: 0 }}    // アンマウント時
-            >
             <main className="main">
                 <div className='container'>
                     <div className={GLstyles.wrap}>
@@ -44,7 +38,6 @@ export default function Guidelines() {
                     </div>
                 </div>
             </main>
-            </motion.div>
         </>
     )
 }

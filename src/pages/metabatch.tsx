@@ -5,7 +5,6 @@ import Link from 'next/link';
 import MBstyles from '@/styles/Metabatch/Metabatch.module.scss'
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/scss/modal-video.scss';
-import { motion } from 'framer-motion'
 
 export default function Metabatch() {
     const [isOpen1, setIsOpen1] = useState(false);
@@ -41,11 +40,6 @@ export default function Metabatch() {
             <Head>
                 <title>めたばっちについて | メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
-            <motion.div
-                initial={{ opacity: 0 }} // 初期状態
-                animate={{ opacity: 1 }} // マウント時
-                exit={{ opacity: 0 }}    // アンマウント時
-            >
             <main className="main">
                 <div className='container'>
                     <div className={MBstyles.wrap}>
@@ -277,7 +271,6 @@ export default function Metabatch() {
                     </div>
                 </div>
             </main>
-            </motion.div>
         </>
     )
 }
