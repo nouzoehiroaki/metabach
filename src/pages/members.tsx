@@ -1,14 +1,30 @@
 import Head from 'next/head'
+import { useEffect } from "react"
 import MBstyles from '@/styles/Members/Members.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function Members() {
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash && hash !== "#") {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, []);
     return (
         <>
             <Head>
                 <title>運営メンバー | メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
+            <motion.div
+                initial={{ opacity: 0 }} // 初期状態
+                animate={{ opacity: 1 }} // マウント時
+                exit={{ opacity: 0 }}    // アンマウント時
+            >
             <main className="main">
                 <section>
                     <div className='container'>
@@ -238,7 +254,7 @@ export default function Members() {
                         </div>
                     </div>
                 </section>
-                <section className={MBstyles.sec02}>
+                <section id='company' className={MBstyles.sec02}>
                     <div className='container'>
                         <div className={MBstyles.wrap}>
                             <h1 className='underPage-h1'>
@@ -285,6 +301,7 @@ export default function Members() {
                     </div>
                 </section>
             </main>
+            </motion.div>
         </>
     )
 }

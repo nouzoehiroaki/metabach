@@ -4,6 +4,7 @@ import RMstyles from '@/styles/Rium/Rium.module.scss'
 import Image from 'next/image'
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/scss/modal-video.scss';
+import { motion } from 'framer-motion'
 
 export default function Rium() {
     const [isOpen1, setIsOpen1] = useState(false);
@@ -49,6 +50,11 @@ export default function Rium() {
             <Head>
                 <title>Riumについて | メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
+            <motion.div
+                initial={{ opacity: 0 }} // 初期状態
+                animate={{ opacity: 1 }} // マウント時
+                exit={{ opacity: 0 }}    // アンマウント時
+            >
             <main className="main">
                 <div className='container'>
                     <div className={RMstyles.wrap}>
@@ -216,6 +222,7 @@ export default function Rium() {
                     </div>
                 </div>
             </main>
+            </motion.div>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import {Link as Scroll} from "react-scroll"
 export default function Footer() {
     return (
         <>
@@ -34,50 +35,50 @@ export default function Footer() {
                     <nav>
                         <ul className='box order01'>
                             <li>
-                                <Link href="/" >
+                                <Link href="/" scroll={false}>
                                     トップページ
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/metavelive" >
+                                <Link href="/metavelive" scroll={false}>
                                     NINJAメタバライブについて
                                 </Link>
                             </li>
                         </ul>
                         <ul className='box order02'>
                             <li>
-                                <Link href="/metabatch" >
+                                <Link href="/metabatch"scroll={false} >
                                     めたばっちについて
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                        <Link href="/guidelines" >
+                                        <Link href="/guidelines" scroll={false}>
                                             めたばっち二次創作ガイドライン
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <Link href="/rium" >
+                                <Link href="/rium" scroll={false}>
                                     Rium(提携先)について
                                 </Link>
                             </li>
                         </ul>
                         <ul className='box order03'>
                             <li>
-                                <Link href="/members" >
+                                <Link href="/members" scroll={false}>
                                     運営メンバー
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                        <Link href="/members" >
-                                            会社情報
-                                        </Link>
+                                    <Link href="/members#company" scroll={false}>
+                                        会社概要
+                                    </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <Link href="/contact" >
+                                <Link href="/contact" scroll={false}>
                                     お問い合わせ
                                 </Link>
                             </li>

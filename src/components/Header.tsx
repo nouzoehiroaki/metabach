@@ -45,34 +45,34 @@ const Header: FC = () => {
                                     </Link>
                                     <ul className='sub'>
                                         <li>
-                                            <Link href="/metavelive">
+                                            <Link href="/metavelive" scroll={false}>
                                                 NINJAメタバライブについて
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/metabatch">
+                                            <Link href="/metabatch" scroll={false}>
                                                 めたばっちについて
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/rium">
+                                            <Link href="/rium" scroll={false}>
                                                 Rium (提携先) について
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link href="/guidelines">
+                                    <Link href="/guidelines" scroll={false}>
                                         GUIDELINES
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/members">
+                                    <Link href="/members" scroll={false}>
                                         MEMBERS
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact" >
+                                    <Link href="/contact" scroll={false}>
                                         CONTACT
                                     </Link>
                                 </li>
@@ -81,7 +81,7 @@ const Header: FC = () => {
                     </div>
                     <div className='logo-area'>
                         <div className='metavelive-logo-box'>
-                            <Link href="/">
+                            <Link href="/" scroll={false}>
                                 <Image
                                     src="/metavelive-logo.svg"
                                     alt="Metavelive Logo"
@@ -118,39 +118,39 @@ const Header: FC = () => {
                     <nav>
                         <ul className='main'>
                             <li>
-                                <Link href="#" onClick={closeMenu}>
+                                <Link href="#" onClick={closeMenu} scroll={false}>
                                     ABOUT
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                        <Link href="/metavelive" onClick={closeMenu}>
+                                        <Link href="/metavelive" onClick={closeMenu} scroll={false}>
                                             NINJAメタバライブについて
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/metabatch" onClick={closeMenu}>
+                                        <Link href="/metabatch" onClick={closeMenu} scroll={false}>
                                             めたばっちについて
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/rium" onClick={closeMenu}>
+                                        <Link href="/rium" onClick={closeMenu} scroll={false}>
                                             Rium (提携先) について
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <Link href="/guidelines" onClick={closeMenu}>
+                                <Link href="/guidelines" onClick={closeMenu} scroll={false}>
                                     GUIDELINES
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/members" onClick={closeMenu}>
+                                <Link href="/members" onClick={closeMenu} scroll={false}>
                                     MEMBERS
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" onClick={closeMenu} >
+                                <Link href="/contact" onClick={closeMenu} scroll={false}>
                                     CONTACT
                                 </Link>
                             </li>
