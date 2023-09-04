@@ -2,6 +2,7 @@ import Head from 'next/head'
 import MBstyles from '@/styles/Contact/Contact.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function Contact() {
     return (
@@ -9,6 +10,11 @@ export default function Contact() {
             <Head>
                 <title>お問い合わせ | メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
+            <motion.div
+                initial={{ opacity: 0 }} // 初期状態
+                animate={{ opacity: 1 }} // マウント時
+                exit={{ opacity: 0 }}    // アンマウント時
+            >
             <main className="main">
                 <section className={MBstyles.sec01}>
                     <div className='container'>
@@ -182,6 +188,7 @@ export default function Contact() {
                     </div>   
                 </section>
             </main>
+            </motion.div>
         </>
     )
 }
