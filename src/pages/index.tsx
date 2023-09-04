@@ -7,7 +7,6 @@ import Modal from '@/components/Modal';
 import { CSSTransition } from 'react-transition-group';
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/scss/modal-video.scss';
-import { motion } from 'framer-motion'
 
 export default function Home() {
     const nodeRef = useRef(null);
@@ -36,11 +35,6 @@ export default function Home() {
             <Head>
                 <title>メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
-            <motion.div
-                initial={{ opacity: 0 }} // 初期状態
-                animate={{ opacity: 1 }} // マウント時
-                exit={{ opacity: 0 }}    // アンマウント時
-            >
             <main className="main">
                 <section className={styles.firstView}>
                     <h1>
@@ -70,7 +64,7 @@ export default function Home() {
                         <strong className={styles.strong}>
                             このたび、NINJAメタバライブは
                             <br className='tab-only'/>
-                            <Link href="/rium" className={styles.rium} scroll={false}>
+                            <Link href="/rium" className={styles.rium} >
                                 <span className={styles.newWindow}>「Rium」</span>
                             </Link>
                             と提携し、<br />
@@ -134,7 +128,7 @@ export default function Home() {
                             <div className='link-flex-box'>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/metavelive" scroll={false}>
+                                        <Link href="/metavelive" >
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/top/ninjametavelive-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/top/ninjametavelive-sp.png" type="image/png" />
@@ -150,7 +144,7 @@ export default function Home() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="/metavelive" scroll={false}>
+                                            <Link href="/metavelive" >
                                                 NINJAメタバライブ
                                             </Link>
                                         </h4>
@@ -161,7 +155,7 @@ export default function Home() {
                                 </div>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/metabatch" scroll={false}>
+                                        <Link href="/metabatch" >
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/top/metabatch-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/top/metabatch-sp.png" type="image/png" />
@@ -177,21 +171,21 @@ export default function Home() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="/metabatch" scroll={false}>
+                                            <Link href="/metabatch" >
                                                 めたばっち
                                             </Link>
                                         </h4>
                                         <p className={styles.topPLetter}>
                                             メタバースの妖精。NINJAメタバライブが2022年12月にリリースしたジェネラティブNFTのキャラクターです。
                                         </p>
-                                        <Link href="/guidelines" className='guide-line top' scroll={false}>
+                                        <Link href="/guidelines" className='guide-line top' >
                                             二次創作ガイドラインはこちら
                                         </Link>
                                     </div>
                                 </div>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="/rium" scroll={false}>
+                                        <Link href="/rium" >
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/top/rium-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/top/rium-sp.png" type="image/png" />
@@ -207,7 +201,7 @@ export default function Home() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="/rium" scroll={false}>
+                                            <Link href="/rium" >
                                                 Rium
                                             </Link>
                                         </h4>
@@ -241,7 +235,7 @@ export default function Home() {
                                 </div>
                                 <div className={styles.box}>
                                     <h4 className={styles.titleStyle}>
-                                        <Link href="/members" scroll={false}>
+                                        <Link href="/members" >
                                             運営メンバー・会社情報
                                         </Link>
                                     </h4>
@@ -270,7 +264,7 @@ export default function Home() {
                                 </div>
                                 <div className={styles.box}>
                                     <h4 className={styles.titleStyle}>
-                                        <Link href="/contact" scroll={false}>
+                                        <Link href="/contact" >
                                             お問い合わせ
                                         </Link>
                                     </h4>
@@ -280,7 +274,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-            </motion.div>
         </>
     )
 }

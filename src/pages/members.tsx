@@ -3,7 +3,6 @@ import { useEffect } from "react"
 import MBstyles from '@/styles/Members/Members.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 export default function Members() {
     useEffect(() => {
@@ -20,11 +19,6 @@ export default function Members() {
             <Head>
                 <title>運営メンバー | メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
-            <motion.div
-                initial={{ opacity: 0 }} // 初期状態
-                animate={{ opacity: 1 }} // マウント時
-                exit={{ opacity: 0 }}    // アンマウント時
-            >
             <main className="main">
                 <section>
                     <div className='container'>
@@ -301,7 +295,6 @@ export default function Members() {
                     </div>
                 </section>
             </main>
-            </motion.div>
         </>
     )
 }

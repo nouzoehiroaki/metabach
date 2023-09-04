@@ -5,7 +5,6 @@ import Link from 'next/link';
 import MLstyles from '@/styles/Metavelive/Metavelive.module.scss'
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/scss/modal-video.scss';
-import { motion } from 'framer-motion'
 
 export default function Metavelive() {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +20,6 @@ export default function Metavelive() {
             <Head>
                 <title>NINJAメタバライブについて | メタバースライブ文化を盛り上げるNFT | めたばっち</title>
             </Head>
-            <motion.div
-                initial={{ opacity: 0 }} // 初期状態
-                animate={{ opacity: 1 }} // マウント時
-                exit={{ opacity: 0 }}    // アンマウント時
-            >
             <main className="main">
                 <div className='container'>
                     <div className={MLstyles.wrap}>
@@ -260,7 +254,6 @@ export default function Metavelive() {
                     </div>
                 </div>
             </main>
-            </motion.div>
         </>
     )
 }

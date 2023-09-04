@@ -35,50 +35,50 @@ export default function Footer() {
                     <nav>
                         <ul className='box order01'>
                             <li>
-                                <Link href="/" scroll={false}>
+                                <Link href="/" >
                                     トップページ
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/metavelive" scroll={false}>
+                                <Link href="/metavelive" >
                                     NINJAメタバライブについて
                                 </Link>
                             </li>
                         </ul>
                         <ul className='box order02'>
                             <li>
-                                <Link href="/metabatch"scroll={false} >
+                                <Link href="/metabatch" >
                                     めたばっちについて
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                        <Link href="/guidelines" scroll={false}>
+                                        <Link href="/guidelines" >
                                             めたばっち二次創作ガイドライン
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <Link href="/rium" scroll={false}>
+                                <Link href="/rium" >
                                     Rium(提携先)について
                                 </Link>
                             </li>
                         </ul>
                         <ul className='box order03'>
                             <li>
-                                <Link href="/members" scroll={false}>
+                                <Link href="/members" >
                                     運営メンバー
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                    <Link href="/members#company" scroll={false}>
+                                    <Link href="/members#company" >
                                         会社概要
                                     </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <Link href="/contact" scroll={false}>
+                                <Link href="/contact" >
                                     お問い合わせ
                                 </Link>
                             </li>
