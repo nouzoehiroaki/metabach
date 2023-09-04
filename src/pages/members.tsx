@@ -165,21 +165,73 @@ export default function Members() {
                                 </div>
                                 <div className={MBstyles.otherMembers}>
                                     <div className={MBstyles.left}>
-                                        <h3>カメしょう</h3>
-                                        <h3>たくぼぉ</h3>
-                                        <h3>たそがれ</h3>
-                                        <h3>KINOKO</h3>
-                                        <h3>hopper</h3>
-                                        <h3>のりすけ</h3>
-                                        <h3>Zodie</h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/cameshow_eth"  target="_blank" rel="noopener noreferrer">
+                                                カメしょう
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/takuboooVideo"  target="_blank" rel="noopener noreferrer">
+                                                たくぼぉ
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/tasogarefilms"  target="_blank" rel="noopener noreferrer">
+                                                たそがれ
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/KINOKO_VJ"  target="_blank" rel="noopener noreferrer">
+                                                KINOKO
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/hopperA15"  target="_blank" rel="noopener noreferrer">
+                                                hopper
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/norisuke_NFT"  target="_blank" rel="noopener noreferrer">
+                                                のりすけ
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/ZodieSpi"  target="_blank" rel="noopener noreferrer">
+                                                Zodie
+                                            </Link>
+                                        </h3>
                                     </div>
                                     <div className={MBstyles.right}>
-                                        <h3>ピロリズム</h3>
-                                        <h3>二条たま</h3>
-                                        <h3>ぼっけ</h3>
-                                        <h3>チヒロ</h3>
-                                        <h3>ヒロニア</h3>
-                                        <h3>Mii</h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/NarukamiF_14941"  target="_blank" rel="noopener noreferrer">
+                                                ピロリズム
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/2jo_TAMA"  target="_blank" rel="noopener noreferrer">
+                                                二条たま
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/yukaka1028"  target="_blank" rel="noopener noreferrer">
+                                                ぼっけ
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/OoChihiroOO"  target="_blank" rel="noopener noreferrer">
+                                                チヒロ
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/hironia_nft"  target="_blank" rel="noopener noreferrer">
+                                                ヒロニア
+                                            </Link>
+                                        </h3>
+                                        <h3>
+                                            <Link href="https://twitter.com/nft_mkst"  target="_blank" rel="noopener noreferrer">
+                                                Mii
+                                            </Link>
+                                        </h3>
                                     </div>
                                 </div>
                             </div>

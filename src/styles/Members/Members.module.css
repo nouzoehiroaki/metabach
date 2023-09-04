@@ -136,19 +136,20 @@
 .wrap .members .otherMembers .left h3:last-child {
   margin-bottom: 0;
 }
-.wrap .members .otherMembers h3 {
+.wrap .members .otherMembers h3 a {
+  display: block;
   color: #1C73DB;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {
-  .wrap .members .otherMembers h3 {
+  .wrap .members .otherMembers h3 a {
     font-size: 18px;
   }
 }
 @media (max-width: 360px) {
-  .wrap .members .otherMembers h3 {
+  .wrap .members .otherMembers h3 a {
     font-size: 13px;
   }
 }

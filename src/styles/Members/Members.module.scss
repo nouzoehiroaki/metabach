@@ -118,16 +118,20 @@
                 }
             }
             h3{
-                color: #1C73DB;
-                font-size: 32px;
-                @media (max-width: 767px) {
-                    font-size: 18px;
+                a{
+                    display: block;
+                    color: #1C73DB;
+                    font-size: 32px;
+                    @media (max-width: 767px) {
+                        font-size: 18px;
+                    }
+                    @media (max-width: 360px) {
+                        font-size: 13px;
+                    }
+                    font-weight: bold;
+                    margin-bottom: 20px;
                 }
-                @media (max-width: 360px) {
-                    font-size: 13px;
-                }
-                font-weight: bold;
-                margin-bottom: 20px;
+                
             }
         }
     }
