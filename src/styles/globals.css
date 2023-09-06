@@ -136,6 +136,9 @@ body button {
   line-height: 0;
   cursor: pointer;
 }
+body button:hover {
+  opacity: 0.7;
+}
 body button.newOrder {
   display: block;
   width: 100%;
@@ -164,6 +167,22 @@ body button.videoThum.hidden {
 }
 body button.videoThum.metabach {
   margin-bottom: 30px;
+}
+body button.videoThum::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-image: url(/video-play.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  opacity: 0.8;
 }
 body img {
   width: 100%;
