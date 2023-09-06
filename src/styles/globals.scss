@@ -814,3 +814,16 @@ header{
     padding-top: 32px;
     padding-bottom: 42px;
 }
+main{
+    animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn { 
+        from {
+            opacity: 0;
+            transform: translateY(-5px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }

@@ -1,18 +1,5 @@
 .firstView{
     position: relative;
-    h1{
-        animation: fadeIn 2s ease 0s 1 normal;
-    }
-    @keyframes fadeIn { 
-        from {
-            opacity: 0;
-            transform: translateY(-5px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
 }
 .concept{
     padding-bottom: 45px;
