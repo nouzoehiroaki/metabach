@@ -1,7 +1,10 @@
-import React, { useState, FC, useRef } from 'react';
+import React, { useState, FC, useRef,useEffect } from 'react';
 import Image from 'next/image';
 import { CSSTransition } from 'react-transition-group';
 import Link from 'next/link';
+function isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+}
 const Header: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const toggleMenu = () => {
@@ -13,6 +16,20 @@ const Header: FC = () => {
         document.body.classList.remove('no-scroll');
     };
     const nodeRef = useRef(null);
+    useEffect(() => {
+        const logoImage = document.querySelector('.metavelive-logo-box img') as HTMLImageElement | null;
+        if (logoImage) {
+            if (isSafari()) {
+              logoImage.src = '/metavelive-logo.png';
+            }
+        }
+        const logoImage02 = document.querySelector('.logo-box img') as HTMLImageElement | null;
+        if (logoImage02) {
+            if (isSafari()) {
+                logoImage02.src = '/logo.png';
+            }
+        }
+    }, []); 
     return (
         <>
             <header>

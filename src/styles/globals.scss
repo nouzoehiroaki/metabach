@@ -277,6 +277,7 @@ header{
         height: 100%;
         align-items: center;
         padding: 0px 20px;
+        position: relative;
         @media (min-width: 769px) {
             flex-direction: row-reverse;
         }
@@ -285,6 +286,57 @@ header{
         }
         .logo-area {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (min-width: 575px) {
+                width: 245px;
+            }
+            @media (min-width: 769px) {
+                width: 219px;
+            }
+            @media (min-width: 1500px) {
+                width: 349px;
+            }
+            .metavelive-logo-box {
+                width: 127px;
+                @media (max-width: 574px) {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                }
+                @media (max-width: 374px) {
+                   width: 100px;
+                }
+                @media (min-width: 769px) {
+                    width: 114px;
+                }
+                @media (min-width: 1500px) {
+                    width: 155px;
+                }
+            }
+            .logo-box {
+                 width: 117px;
+                @media (max-width: 574px) {
+                   position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                }
+                @media (max-width: 374px) {
+                   width: 100px;
+                }
+                @media (min-width: 769px) {
+                    width: 105px;
+                }
+                @media (min-width: 1500px) {
+                    width: 143px;
+                }
+            }
         }
         .menu-box {
             position: relative;
