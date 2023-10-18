@@ -44,7 +44,7 @@ export default function Members() {
                                         <h2 className={MBstyles.name}>
                                             ペスハム / <span className={MBstyles.mini}>Pessham</span>
                                             <span className={MBstyles.twitter}>
-                                                <Link href="https://twitter.com/pess_ham"  target="_blank" rel="noopener noreferrer">
+                                                <Link href="https://twitter.com/pess_ham" target="_blank" rel="noopener noreferrer">
                                                     <Image
                                                         src="/hov-tw.svg"
                                                         alt="ペスハム / Pessham"
@@ -73,7 +73,7 @@ export default function Members() {
                                         <h2 className={MBstyles.name}>
                                             メラ / <span className={MBstyles.mini}>Mela Souma</span>
                                             <span className={MBstyles.twitter}>
-                                                <Link href="https://twitter.com/MelaNftartist"  target="_blank" rel="noopener noreferrer">
+                                                <Link href="https://twitter.com/MelaNftartist" target="_blank" rel="noopener noreferrer">
                                                     <Image
                                                         src="/hov-tw.svg"
                                                         alt="メラ / Mela Souma"
@@ -102,7 +102,7 @@ export default function Members() {
                                         <h2 className={MBstyles.name}>
                                             こうき / <span className={MBstyles.mini}>Kouki</span>
                                             <span className={MBstyles.twitter}>
-                                                <Link href="https://twitter.com/kouki_ism"  target="_blank" rel="noopener noreferrer">
+                                                <Link href="https://twitter.com/kouki_ism" target="_blank" rel="noopener noreferrer">
                                                     <Image
                                                         src="/hov-tw.svg"
                                                         alt="こうき / Kouki"
@@ -131,7 +131,7 @@ export default function Members() {
                                         <h2 className={MBstyles.name}>
                                             アヲアヒル /  <span className={MBstyles.mini}>Awoahiru</span>
                                             <span className={MBstyles.twitter}>
-                                                <Link href="https://twitter.com/awoahiru"  target="_blank" rel="noopener noreferrer">
+                                                <Link href="https://twitter.com/awoahiru" target="_blank" rel="noopener noreferrer">
                                                     <Image
                                                         src="/hov-tw.svg"
                                                         alt="アヲアヒル / Awoahiru"
@@ -160,7 +160,7 @@ export default function Members() {
                                         <h2 className={MBstyles.name}>
                                             るかん / <span className={MBstyles.mini}>Rukan</span>
                                             <span className={MBstyles.twitter}>
-                                                <Link href="https://twitter.com/rukan1010"  target="_blank" rel="noopener noreferrer">
+                                                <Link href="https://twitter.com/rukan1010" target="_blank" rel="noopener noreferrer">
                                                     <Image
                                                         src="/hov-tw.svg"
                                                         alt="るかん / Rukan"
@@ -176,69 +176,69 @@ export default function Members() {
                                 <div className={MBstyles.otherMembers}>
                                     <div className={MBstyles.left}>
                                         <h3>
-                                            <Link href="https://twitter.com/cameshow_eth"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/cameshow_eth" target="_blank" rel="noopener noreferrer">
                                                 カメしょう
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/takuboooVideo"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/takuboooVideo" target="_blank" rel="noopener noreferrer">
                                                 たくぼぉ
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/tasogarefilms"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/tasogarefilms" target="_blank" rel="noopener noreferrer">
                                                 たそがれ
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/KINOKO_VJ"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/KINOKO_VJ" target="_blank" rel="noopener noreferrer">
                                                 KINOKO
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/hopperA15"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/hopperA15" target="_blank" rel="noopener noreferrer">
                                                 hopper
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/norisuke_NFT"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/norisuke_NFT" target="_blank" rel="noopener noreferrer">
                                                 のりすけ
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/ZodieSpi"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/ZodieSpi" target="_blank" rel="noopener noreferrer">
                                                 Zodie
                                             </Link>
                                         </h3>
                                     </div>
                                     <div className={MBstyles.right}>
                                         <h3>
-                                            <Link href="https://twitter.com/NarukamiF_14941"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/NarukamiF_14941" target="_blank" rel="noopener noreferrer">
                                                 ピロリズム
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/2jo_TAMA"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/2jo_TAMA" target="_blank" rel="noopener noreferrer">
                                                 二条たま
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/yukaka1028"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/yukaka1028" target="_blank" rel="noopener noreferrer">
                                                 ぼっけ
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/OoChihiroOO"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/OoChihiroOO" target="_blank" rel="noopener noreferrer">
                                                 チヒロ
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/hironia_nft"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/hironia_nft" target="_blank" rel="noopener noreferrer">
                                                 ヒロニア
                                             </Link>
                                         </h3>
                                         <h3>
-                                            <Link href="https://twitter.com/nft_mkst"  target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://twitter.com/nft_mkst" target="_blank" rel="noopener noreferrer">
                                                 Mii
                                             </Link>
                                         </h3>
@@ -260,7 +260,7 @@ export default function Members() {
                                     <tbody>
                                         <tr>
                                             <th>会社名</th>
-                                            <td>合同会社メタマケ</td>
+                                            <td>株式会社メタマケ</td>
                                         </tr>
                                         <tr>
                                             <th>代表社員</th>
