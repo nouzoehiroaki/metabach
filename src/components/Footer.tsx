@@ -1,33 +1,33 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import {Link as Scroll} from "react-scroll"
+import { Link as Scroll } from "react-scroll"
 export default function Footer() {
     return (
         <>
             <footer className="footer">
                 <div className="sns-flame">
                     <div className='icon'>
-                        <Link href="https://twitter.com/ninjametavelive"  target="_blank" rel="noopener noreferrer" className='twitter'>
+                        <Link href="https://twitter.com/ninjametavelive" target="_blank" rel="noopener noreferrer" className='twitter'>
                         </Link>
                     </div>
                     <div className='icon'>
-                        <Link href="https://www.instagram.com/ninjametavelive/"  target="_blank" rel="noopener noreferrer" className='instagram'>
+                        <Link href="https://www.instagram.com/ninjametavelive/" target="_blank" rel="noopener noreferrer" className='instagram'>
                         </Link>
                     </div>
                     <div className='icon'>
-                        <Link href="https://discord.com/invite/SSwQwfUn3h"  target="_blank" rel="noopener noreferrer" className='discord'>
+                        <Link href="https://discord.com/invite/SSwQwfUn3h" target="_blank" rel="noopener noreferrer" className='discord'>
                         </Link>
                     </div>
                     <div className='icon'>
-                        <Link href="https://www.tiktok.com/@metabatch_?lang=ja-JP"  target="_blank" rel="noopener noreferrer" className='tiktok'>
+                        <Link href="https://www.tiktok.com/@metabatch_?lang=ja-JP" target="_blank" rel="noopener noreferrer" className='tiktok'>
                         </Link>
                     </div>
-                    <div className='icon'>
+                    {/* <div className='icon'>
                         <Link href="https://opensea.io/collection/metabatch"  target="_blank" rel="noopener noreferrer" className='opensea'>
                         </Link>
-                    </div>
+                    </div> */}
                     <div className='icon'>
-                        <Link href="https://line.me/R/ti/p/@366ctfwh"  target="_blank" rel="noopener noreferrer" className='line'>
+                        <Link href="https://line.me/R/ti/p/@366ctfwh" target="_blank" rel="noopener noreferrer" className='line'>
                         </Link>
                     </div>
                 </div>
@@ -71,9 +71,9 @@ export default function Footer() {
                                 </Link>
                                 <ul className='sub'>
                                     <li>
-                                    <Link href="/members#company" >
-                                        会社概要
-                                    </Link>
+                                        <Link href="/members#company" >
+                                            会社概要
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -97,4 +97,4 @@ export default function Footer() {
             </footer>
         </>
     )
-  }
+}

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React, { useState  } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 import MBstyles from '@/styles/Metabatch/Metabatch.module.scss'
@@ -54,10 +54,10 @@ export default function Metabatch() {
                             めたばっちSODAはもう飲んだっちか⁉
                         </p>
                         <React.Fragment>
-                            <ModalVideo 
-                                channel='youtube'  
-                                isOpen={isOpen1} 
-                                videoId="ZlFusgy5kpo" 
+                            <ModalVideo
+                                channel='youtube'
+                                isOpen={isOpen1}
+                                videoId="ZlFusgy5kpo"
                                 onClose={closeVideoModal1}
                             />
                             <button className="videoThum metabach" onClick={openModal1}>
@@ -80,10 +80,10 @@ export default function Metabatch() {
                             めたばっちはメタバライブが作り出す「メタバの渦」をもっともっと拡げるために、メタバライブ1周年のときに産まれた<br />「<span>メタバースの妖精</span>」っち!
                         </p>
                         <React.Fragment>
-                            <ModalVideo 
-                                channel='youtube'  
-                                isOpen={isOpen2} 
-                                videoId="8FECQWjrzjA" 
+                            <ModalVideo
+                                channel='youtube'
+                                isOpen={isOpen2}
+                                videoId="8FECQWjrzjA"
                                 onClose={closeVideoModal2}
                             />
                             <button className="videoThum metabach" onClick={openModal2}>
@@ -105,10 +105,10 @@ export default function Metabatch() {
                             ファンサは大事っちからね～！
                         </p>
                         <React.Fragment>
-                            <ModalVideo 
-                                channel='youtube'  
-                                isOpen={isOpen3} 
-                                videoId="Z7iFsg6jehw" 
+                            <ModalVideo
+                                channel='youtube'
+                                isOpen={isOpen3}
+                                videoId="Z7iFsg6jehw"
                                 onClose={closeVideoModal3}
                             />
                             <button className="videoThum metabach" onClick={openModal3}>
@@ -146,7 +146,7 @@ export default function Metabatch() {
                                         />
                                     </picture>
                                 </Link>
-                                <Link href="https://discord.com/invite/SSwQwfUn3h" className='discordLink top metabatch'  target="_blank" rel="noopener noreferrer">
+                                <Link href="https://discord.com/invite/SSwQwfUn3h" className='discordLink top metabatch' target="_blank" rel="noopener noreferrer">
                                     Discordサーバーへ
                                 </Link>
                             </div>
@@ -227,7 +227,7 @@ export default function Metabatch() {
                                 </div>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="https://opensea.io/collection/metabatch" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://rarible.com/metabatch/items" target="_blank" rel="noopener noreferrer">
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/opensea-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/opensea-sp.png" type="image/png" />
@@ -243,8 +243,8 @@ export default function Metabatch() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="https://opensea.io/collection/metabatch" target="_blank" rel="noopener noreferrer">
-                                                OPEN SEA
+                                            <Link href="https://rarible.com/metabatch/items" target="_blank" rel="noopener noreferrer">
+                                                Rarible
                                             </Link>
                                         </h4>
                                         <p className={MBstyles.topPLetter}>
