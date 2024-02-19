@@ -852,6 +852,11 @@ header .menu-content .header-sns .box {
   width: 23px;
   height: 23px;
 }
+.footer .sns-flame .icon a.rarible {
+  background-image: url(/defa-rarible.svg), url(/hov-rarible.svg);
+  width: 30px;
+  height: 29px;
+}
 .footer .sns-flame .icon a.line {
   background-image: url(/defa-line.svg), url(/hov-line.svg);
   width: 32px;

@@ -22,10 +22,10 @@ export default function Footer() {
                         <Link href="https://www.tiktok.com/@metabatch_?lang=ja-JP" target="_blank" rel="noopener noreferrer" className='tiktok'>
                         </Link>
                     </div>
-                    {/* <div className='icon'>
-                        <Link href="https://opensea.io/collection/metabatch"  target="_blank" rel="noopener noreferrer" className='opensea'>
+                    <div className='icon'>
+                        <Link href="https://rarible.com/metabatch/items" target="_blank" rel="noopener noreferrer" className='rarible'>
                         </Link>
-                    </div> */}
+                    </div>
                     <div className='icon'>
                         <Link href="https://line.me/R/ti/p/@366ctfwh" target="_blank" rel="noopener noreferrer" className='line'>
                         </Link>
