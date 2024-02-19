@@ -768,6 +768,11 @@ header{
                     width: 23px;
                     height: 23px;
                 }
+                &.rarible{
+                    background-image: url(/defa-rarible.svg),url(/hov-rarible.svg);
+                    width: 30px;
+                    height: 29px;
+                }
                 &.line {
                     background-image: url(/defa-line.svg),url(/hov-line.svg);
                     width: 32px;
