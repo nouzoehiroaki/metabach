@@ -227,14 +227,14 @@ export default function Metabatch() {
                                 </div>
                                 <div className='box'>
                                     <div className='img'>
-                                        <Link href="https://rarible.com/metabatch/items" target="_blank" rel="noopener noreferrer">
+                                        <Link href="https://magiceden.io/collections/ethereum/0x4126ad8c9a4e3e1fec4082b8c7bc9f3e75ac062d" target="_blank" rel="noopener noreferrer">
                                             <picture>
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/opensea-sp.webp" type="image/webp" />
                                                 <source media="(max-width: 768px)" srcSet="/under/Metabatch/opensea-sp.png" type="image/png" />
                                                 <source srcSet="/under/Metabatch/opensea.webp" type="image/webp" />
                                                 <Image
                                                     src="/under/Metabatch/opensea.png"
-                                                    alt="OPEN SEA"
+                                                    alt="Magic Eden"
                                                     width={600}
                                                     height={338}
                                                 />
@@ -243,7 +243,7 @@ export default function Metabatch() {
                                     </div>
                                     <div className='text'>
                                         <h4 className='title-style'>
-                                            <Link href="https://rarible.com/metabatch/items" target="_blank" rel="noopener noreferrer">
+                                            <Link href="https://magiceden.io/collections/ethereum/0x4126ad8c9a4e3e1fec4082b8c7bc9f3e75ac062d" target="_blank" rel="noopener noreferrer">
                                                 Magic Eden
                                             </Link>
                                         </h4>
