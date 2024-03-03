@@ -23,7 +23,7 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className='icon'>
-                        <Link href="https://rarible.com/metabatch/items" target="_blank" rel="noopener noreferrer" className='rarible'>
+                        <Link href="https://magiceden.io/collections/ethereum/0x4126ad8c9a4e3e1fec4082b8c7bc9f3e75ac062d" target="_blank" rel="noopener noreferrer" className='magiceden'>
                         </Link>
                     </div>
                     <div className='icon'>

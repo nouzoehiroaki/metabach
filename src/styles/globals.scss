@@ -778,6 +778,11 @@ header{
                     width: 32px;
                     height: 32px;
                 }
+                &.magiceden {
+                    background-image: url(/defa-magiceden.svg),url(/hov-magiceden.svg);
+                    width: 33px;
+                    height: 20px;
+                }
             }
         }
     }

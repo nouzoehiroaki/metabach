@@ -244,7 +244,7 @@ export default function Metabatch() {
                                     <div className='text'>
                                         <h4 className='title-style'>
                                             <Link href="https://rarible.com/metabatch/items" target="_blank" rel="noopener noreferrer">
-                                                Rarible
+                                                Magic Eden
                                             </Link>
                                         </h4>
                                         <p className={MBstyles.topPLetter}>

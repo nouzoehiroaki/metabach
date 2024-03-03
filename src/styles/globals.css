@@ -862,6 +862,11 @@ header .menu-content .header-sns .box {
   width: 32px;
   height: 32px;
 }
+.footer .sns-flame .icon a.magiceden {
+  background-image: url(/defa-magiceden.svg), url(/hov-magiceden.svg);
+  width: 33px;
+  height: 20px;
+}
 .footer .footer-menu {
   padding-left: 50px;
 }
