@@ -268,7 +268,7 @@ export default function Members() {
                                         </tr>
                                         <tr>
                                             <th>住所</th>
-                                            <td>東京都多摩市落合2-17-10</td>
+                                            <td>〒390‑0874 長野県松本市大手3丁目3‑9 NTT東日本大名町ビル1F</td>
                                         </tr>
                                         <tr>
                                             <th>資本金</th>
